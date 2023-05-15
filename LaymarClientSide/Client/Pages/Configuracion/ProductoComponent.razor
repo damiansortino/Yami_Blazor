@@ -1,0 +1,596 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@using LaymarClientSide.Shared.Dtos
+@attribute [Authorize(Roles = "Admin, Ventas")]
+@inject HttpClient http
+@page  "/producto"
+@inject IJSRuntime js
+
+
+<h2 class="mt-2">
+    <strong>
+        <span class="badge badge-light">
+            <strong>PRODUCTOS</strong>
+        </span>
+    </strong>
+</h2>
+<div class="row col-md-12 mx-0 border bg-light border-solid rounded pt-2" style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,.75);">
+    @*Boton Crear*@
+    <button class="btn text-primary btn-sm  mb-3 mr-2 border border-solid rounded" title="Crear" @onclick="@(async () => { await CrearProducto(); await HabilitarFormulario(); })"><i class="fas fa-plus-circle"></i></button>
+    @* Boton Editar*@
+    @if (valido)
+    {
+        <button class="btn text-warning btn-sm  mb-3 mr-2 text-white border border-solid rounded " title="Editar" @onclick="@(async () => { AccionSobreProducto = "Editar"; await HabilitarFormulario(); })"><i class="fas fa-edit"></i></button>
+    }
+    else
+    {
+        <button class="btn text-warning btn-sm  mb-3 mr-2 text-white border border-solid rounded disbled" disabled title="Editar" @onclick="@(async () => { AccionSobreProducto = "Editar"; await HabilitarFormulario(); })"><i class="fas fa-edit"></i></button>
+
+    }
+    @*Boton Anular*@
+    @if (valido)
+    {
+        <button class="btn text-danger  mb-3 btn-sm border border-solid rounded" title="Anular" @onclick="@(async () => { await ModalConfirmToggle(); })"><i class="fas fa-ban"></i></button> @*Boton Anular*@
+
+    }
+    else
+    {
+        <button class="btn text-danger  mb-3 btn-sm border border-solid rounded disabled" disabled title="Anular" @onclick="@(async () => { await ModalConfirmToggle(); })"><i class="fas fa-ban"></i></button> @*Boton Anular*@
+
+    }
+
+    @*texto Buscar*@
+
+    <div class="input-group mb-3 col-md-3">
+        <div class="input-group-prepend input-group-sm" @onclick="@( async () => { await BuscarProducto(Convert.ToInt32(cadenaBusqueda)); await DeshabilitarFormulario(); })">
+            <span class="input-group-text" id="basic-addon1">Código</span>
+        </div>
+        <input type="text" class="form-control" @bind-value="@cadenaBusqueda" @bind-value:event="oninput" @onkeypress="@(async (KeyboardEventArgs e) => { if (e.Key == "Enter") { await BuscarProducto(Convert.ToInt32(cadenaBusqueda)); } })" />
+
+
+    </div>
+    @*Boton buscar*@
+    <button class="btn text-primary  mb-3 btn-sm border mr-2 border-solid rounded" title="Anular" @onclick="(async () => { productosBuscados = productos; await ModalToggle(); })"><i class="fas fa-search m-0 p-0"></i></button> @*Boton Anular*@
+
+    @if (productos.Count > 0)
+    {
+
+
+        @*Boton Anterior*@
+        @if (productos.First() != producto)
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2" @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) - 1); await BuscarProducto(Convert.ToInt32(cadenaBusqueda)); await DeshabilitarFormulario();})">
+                <i class="fas fa-backward"></i>
+            </button>
+        }
+        else
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2 disabled" disabled @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) - 1); await BuscarProducto(Convert.ToInt32(cadenaBusqueda)); })">
+                <i class="fas fa-backward"></i>
+            </button>
+        }
+        @*Boton Siguiente*@
+
+        @if (productos.Last() != producto)
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2" @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) + 1); await BuscarProducto(Convert.ToInt32(cadenaBusqueda)); await DeshabilitarFormulario(); })">
+                <i class="fas fa-forward"></i>
+            </button>
+
+        }
+        else
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2 disabled" disabled @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) + 1); await BuscarProducto(Convert.ToInt32(cadenaBusqueda)); await DeshabilitarFormulario(); })">
+                <i class="fas fa-forward"></i>
+            </button>
+        }
+
+    }
+
+
+</div>
+
+@*FORMULARIO*@
+<div class="row col-md-12 mx-0 bg-dark mt-1 rounded"><h4 class="mt-2 text-white py-1"><strong>@AccionSobreProducto.ToUpper()</strong></h4></div>
+
+<div class="bg-light mt-2">
+    <EditForm Model=@producto OnValidSubmit="@GuardarProducto">
+        <ObjectGraphDataAnnotationsValidator />
+
+        <fieldset id="FieldSetFormulario" disabled class="@(producto.fechaBaja != null ? "border border-danger rounded":"border border-solid rounded")" style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,.75)">
+            @if (producto.fechaBaja != null)
+            {
+                <div class="row col-md-12 mx-0 mt-3"><h5 class="ml-2"><strong class="text-danger">Anulado @producto.fechaBaja</strong></h5></div>
+            }
+            <div class="col-md-12 row mx-0 px-0">
+                <div class="input-group mb-2 col-md-6 mt-2">
+                    <div class="col-md-8">
+                        <div class="input-group input-group-sm mb-1 mt-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Código</span>
+                            </div>
+                            <input type="text" class="form-control disabled" disabled @bind-value="@producto.codigo">
+
+                        </div>
+
+
+                    </div>
+                </div>
+                @if (AccionSobreProducto != "Crear")
+                {
+                    <div class="col-md-6">
+                        <h5 class="col-md-12 text-center mb-0"><span class="barcode" style="font-size:3rem">@producto.codigo</span></h5>
+                        <h5 class="col-md-12 text-center"><span class="" style="font-size:1rem">@producto.nombre  @producto.talle @producto.color</span></h5>
+                    </div>
+
+                }
+
+            </div>
+            @*DATOS  DEL PRODUCTO*@
+            <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>DATOS DEL PRODUCTO</strong></div>
+            <div class="row col-md-12 mx-0">
+
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Proveedor</span>
+                    </div>
+                    <select class="form-control" @onchange="((ChangeEventArgs e)=> ChangeProveedor(e))">
+                        <option selected disabled>Selecciona un proveedor</option>
+                        @foreach (Proveedor proveedor in proveedores)
+                        {
+                            if (AccionSobreProducto == "Crear")
+                            {
+                                <option value="@proveedor.PersonaJuridicaId">@proveedor.razonSocial</option>
+
+                            }
+                            else
+                            {
+                                if (producto.proveedor.PersonaJuridicaId == proveedor.PersonaJuridicaId)
+                                {
+                                    <option value="@proveedor.PersonaJuridicaId" selected>@proveedor.razonSocial</option>
+                                }
+                                else
+                                {
+                                    <option value="@proveedor.PersonaJuridicaId">@proveedor.razonSocial</option>
+
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="row col-md-12 mx-0">
+
+                <div class="input-group input-group-sm mb-3 col-md-12">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@producto.nombre">
+                    <ValidationMessage For="@(() => producto.nombre)" />
+
+                </div>
+                <div class="input-group input-group-sm mb-3 col-md-12">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Descripción</span>
+                    </div>
+                    <textarea type="text" class="form-control disabled " @bind-="@producto.descripcion" />
+                </div>
+            </div>
+
+            @*OTROS DATOS*@
+            <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>OTROS DATOS</strong></div>
+            <div class="row col-md-12 mx-0">
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Marca</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@producto.marca">
+                </div>
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Talle</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@producto.talle">
+                </div>
+
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Color</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@producto.color">
+                </div>
+            </div>
+            @*DATOS  DE CONTACTO*@
+            <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>DATOS DE VENTA</strong></div>
+            <div class="row col-md-12 mx-0">
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Precio Costo</span>
+                    </div>
+                    <input type="number" step="0.01" class="form-control " @bind-value="@producto.precioUnitario">
+                </div>
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Porcentaje Rentabilidad</span>
+                    </div>
+                    <input type="number" class="form-control" step="0.01" @bind-value="@producto.porcentajeRentabilidad">
+                </div>
+
+                <div class="mb-3 col-md-4  rounded d-flex justify-content-center alert-sm alert-success align-items-center">
+                    <span><strong>Precio Venta <span class="text-info">$ @(Math.Round(producto.precioUnitario * (1 + producto.porcentajeRentabilidad/100), 2))</span></strong></span>
+                </div>
+
+
+            </div>
+
+            @*STOCK*@
+            @if (AccionSobreProducto == "Crear")
+            {
+                <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>STOCK INICIAL</strong></div>
+                <div class="row col-md-12 mx-0">
+                    <div class="col-md-6">
+                        @foreach (Stock stock in stocks)
+                        {
+                            <div class="row col-md-12 mx-0">
+                                <div class="input-group input-group-sm mb-3 col-md-12">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">@stock.sucursal.nombreSucursal</span>
+                                    </div>
+                                    <input type="number" class="form-control" @bind="@stock.cantidad">
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="row col-md-6 mb-3 mx-0 d-flex justify-content-center align-items-center alert-sm alert-success border border-solid rounded"><strong class="mx-3 my-3">TOTAL: @stocks.Sum(x => x.cantidad)</strong></div>
+                </div>
+            }
+            else
+            {
+                <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>STOCK</strong></div>
+                <div class="row col-md-12 mx-0">
+                    <div class="col-md-6">
+                        @foreach (Stock stock in stocks)
+                        {
+                            <div class="row col-md-12 mx-0">
+                                <div class="input-group input-group-sm mb-3 col-md-12">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">@stock.sucursal.nombreSucursal</span>
+                                    </div>
+                                    <span class="form-control alert-sm alert-success border border-solid rounded">@stock.cantidad</span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="row col-md-6 mb-3 mx-0 d-flex justify-content-center align-items-center alert-sm alert-success border border-solid rounded"><strong class="mx-3 my-3">TOTAL: @stocks.Sum(x => x.cantidad)</strong></div>
+                </div>
+            }
+
+        </fieldset>
+        @*Boton Guardar*@
+        <div class="d-flex justify-content-center row col-md-12 mx-0 px-0 mt-2 mb-3">
+
+            @if (AccionSobreProducto == "Crear" || AccionSobreProducto == "Editar")
+            {
+                <button type="submit" class="btn btn-success col-md-12"><i class="fas fa-save mr-1"></i> Guardar</button>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-success col-md-12 disabled" disabled><i class="fas fa-save mr-1"></i> Guardar</button>
+            }
+        </div>
+    </EditForm>
+    @*MODAL*@
+    <div class="modal p-0 fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar Producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalToggle();  })">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-3 m-2" data-spy="scroll">
+                    @*BODY *@
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-outline-secondary">@(criterioBusqueda == String.Empty ? "Nombre" : criterioBusqueda) </button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Codigo")">Codigo</a>
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Nombre")">Nombre</a>
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Proveedor")">Proveedor</a>
+
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" @bind-value="@cadenafiltroBusqueda" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> {  FiltrarProducto(e); })">
+
+                        <div>
+
+                        </div>
+
+                        <table class="table table-striped mt-3 table-sm">
+                            <thead class="bg-dark text-white">
+
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nombre</th>
+                                    <th>Proveedor</th>
+
+                                    <th>Marca</th>
+                                    <th>Talle</th>
+                                    <th>Color</th>
+                                    <th>Acciones</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (productos.Count > 0)
+                                {
+                                    @foreach (Producto producto in productosBuscados)
+                                    {
+                                        <tr>
+                                            <td>@producto.codigo</td>
+                                            <td>@producto.nombre</td>
+                                            <td>@producto.proveedor.ProveedorId</td>
+
+                                            <td>@producto.marca</td>
+                                            <td>@producto.talle</td>
+                                            <td>@producto.color</td>
+
+                                            <td><button class="btn" @onclick="@(async () => { await BuscarProducto(producto.ProductoId); await ModalToggle(); cadenaBusqueda = Convert.ToString(producto.ProductoId); })"><i class="far fa-eye text-primary"></i></button></td>
+                                        </tr>
+                                    }
+
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="modal p-0 fade" id="modalConfirm" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CONFIRMAR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalConfirmToggle(); })">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-3 m-2" data-spy="scroll">
+                @*BODY *@
+
+                <p><strong>¿Desea anular este producto? Tambien se anularan los stocks de este producto y sus movimientos. Una vez anulado no podrá volver atrás.</strong></p>
+                <div class="col-md-12 d-flex justify-content-center mt-4"> <button class="btn btn-success col-md-4" @onclick="@(async () => {await  AnularProducto(); await ModalConfirmToggle(); })">OK</button><button class="btn btn-light ml-2 col-md-4" @onclick="@ModalConfirmToggle">CANCELAR</button></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    public bool valido { get; set; } = true;
+    public string cadenaBusqueda { get; set; }
+    public string cadenafiltroBusqueda { get; set; } = String.Empty;
+    public string criterioBusqueda { get; set; } = "Nombre";
+    string barcode = "";
+    string barcode_text = "";
+    public string AccionSobreProducto { get; set; } = "Detalles";
+    public Producto producto { get; set; } = new Producto { proveedor = new Proveedor() };
+    public List<Producto> productos { get; set; } = new List<Producto>();
+    public List<Sucursal> sucursales { get; set; } = new List<Sucursal>();
+    public List<Stock> stocks { get; set; } = new List<Stock>();
+    public List<Proveedor> proveedores { get; set; } = new List<Proveedor>();
+    public List<Producto> productosBuscados { get; set; } = new List<Producto>();
+
+    public ProductoDto productoDto { get; set; } = new ProductoDto();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+       
+        await ListarProductos();
+        await ListarProveedores();
+        await ListarSucursales();
+
+
+
+
+    }
+    protected async Task ListarProductos()
+    {
+
+        productos = await http.GetJsonAsync<List<Producto>>("/api/Producto/Listar");
+        if (productos.Count > 0)
+        {
+            await BuscarProducto(productos.Last().ProductoId);
+            cadenaBusqueda = Convert.ToString(producto.ProductoId);
+        }
+        else
+        {
+            producto = new Producto { proveedor = new Proveedor() };
+        }
+    }
+
+    protected async Task ListarSucursales()
+    {
+        sucursales = await http.GetJsonAsync<List<Sucursal>>("/api/Sucursal/Listar");
+    }
+
+    protected async Task ListarProveedores()
+    {
+        proveedores = await http.GetJsonAsync<List<Proveedor>>("/api/Proveedor/Listar");
+        proveedores = proveedores.Where(x => x.fechaBaja == null).ToList();
+    }
+
+    protected async Task BuscarProducto(int codigo)
+    {
+        Producto productoEncontrado = null;
+        AccionSobreProducto = "Detalles";
+        try
+        {
+            productoEncontrado = productos.Where(x => x.ProductoId == codigo).First();
+
+        }
+        catch (Exception)
+        {
+
+        }
+
+        if (productoEncontrado != null)
+        {
+            producto = productoEncontrado;
+
+            stocks = await http.GetJsonAsync<List<Stock>>($"/api/Stock/ListarPorProducto/{producto.ProductoId}");
+            if (producto.fechaBaja != null)
+            {
+                valido = false;
+            }
+            else { valido = true; }
+        }
+        else
+        {
+            cadenaBusqueda = Convert.ToString(producto.ProductoId);
+            await Alerta("top-end", "error", "Producto inexistente");
+
+        }
+
+    }
+
+    protected async Task GuardarProducto()
+    {
+        if (producto.proveedor == null)
+        {
+            await Alerta("top-end", "error", "Tienes que elegir un proveedor");
+
+        }
+        else if (false) { }
+        else
+        {
+            @if (AccionSobreProducto == "Crear")
+            {
+                productoDto.producto = producto;
+                productoDto.stocks = stocks;
+                await http.PostJsonAsync("/api/Producto/Crear", productoDto);
+                await DeshabilitarFormulario();
+
+                await Alerta("top-end", "success", "Se creó con éxito");
+                cadenaBusqueda = Convert.ToString(producto.ProductoId);
+
+            }
+            @if (AccionSobreProducto == "Editar")
+            {
+
+                await http.PutJsonAsync($"/api/Producto/Editar/{producto.ProductoId}", producto);
+                await DeshabilitarFormulario();
+                await Alerta("top-end", "success", "Se editó con éxito");
+
+            }
+            AccionSobreProducto = "Detalle";
+            AccionSobreProducto = "Detalle";
+            await ListarProductos();
+        }
+    }
+
+    protected async Task CrearProducto()
+    {
+        AccionSobreProducto = "Crear";
+        producto = new Producto();
+
+        stocks = new List<Stock>();
+
+        foreach (Sucursal sucursal in sucursales)
+        {
+            stocks.Add(new Stock { sucursal = sucursal, cantidad = 0 });
+        }
+
+
+        valido = false;
+        await HabilitarFormulario();
+
+    }
+    protected async Task AnularProducto()
+    {
+        await http.DeleteAsync($"/api/Producto/Anular/{producto.ProductoId}");
+        if (productos.Count > 0)
+        {
+
+            await ListarProductos();
+
+        }
+        else
+        {
+            producto = new Producto { proveedor = new Proveedor() };
+        }
+    }
+
+    protected void FiltrarProducto(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (cadenafiltroBusqueda != "" && cadenafiltroBusqueda != string.Empty)
+            {
+                try
+                {
+                    if (criterioBusqueda == "Codigo")
+                    {
+                        productosBuscados = productos.Where(x => x.ProductoId.ToString().ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+                    if (criterioBusqueda == "Nombre")
+                    {
+                        productosBuscados = productos.Where(x => x.nombre.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+
+                    if (criterioBusqueda == "Proveedor")
+                    {
+                        productosBuscados = productos.Where(x => x.proveedor.razonSocial.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+
+                }
+                catch (Exception)
+                {
+
+
+                }
+
+            }
+            else { productosBuscados = productos; }
+        }
+    }
+    public void ChangeProveedor(ChangeEventArgs e)
+    {
+        producto.proveedor = proveedores.Where(x => x.PersonaJuridicaId == Convert.ToInt32(e.Value.ToString())).First();
+        producto.porcentajeRentabilidad = producto.proveedor.porcentajeRentabilidad;
+    }
+    public async Task HabilitarFormulario()
+    {
+        await js.InvokeAsync<object>("EnabledFieldFormulario");
+    }
+    public async Task DeshabilitarFormulario()
+    {
+        await js.InvokeAsync<object>("DisabledFieldFormulario");
+    }
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el producto con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+    public async Task ModalToggle()
+    {
+        await js.InvokeAsync<object>("ModalToggle");
+    }
+    public async Task ModalConfirmToggle()
+    {
+        await js.InvokeAsync<object>("ModalConfirmToggle");
+    }
+}
+

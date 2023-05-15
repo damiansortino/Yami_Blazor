@@ -1,0 +1,245 @@
+﻿
+@using LaymarClientSide.Shared.Entidades
+@page "/caja"
+@inject HttpClient http
+@attribute [Authorize(Roles = "Tesoreria, Admin")]
+@inject IJSRuntime js
+
+<h2 class="mt-2">
+    <strong>
+        <span class="badge badge-light">
+            <strong>
+                CAJA AL  <span>@DateTime.Now.AddHours(-3).ToString("dd/MM/yyyy") -  @VariablesGlobales.sucursal.nombreSucursal</span>
+            </strong>
+        </span>
+    </strong>
+</h2>
+
+@if (!ExisteCajaDiariaBandera)
+{
+    <div class="input-group mb-2 col-md-12 mt-2">
+        <div class="col-md-4 px-0">
+            <div class="input-group input-group-sm mb-1 mt-1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">MONTO INICIAL $</span>
+                </div>
+                <input type="number" step="0.01" class="form-control" @bind-value="@montoInicial">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 mx-0 row">
+        <button class="btn btn-success" @onclick="@(async()=> await CrearCajaDiaria())">INICIAR CAJA DIARIA</button>
+    </div>
+}
+else
+{
+
+    <div class="card d-flex justify-content-center bg-light mt-4 p-4 col-md-12 row mx-0">
+        <h3 class="col-md-12 row mx-0 "><strong>MONTO: <i class="fas fa-money-bill-wave text-success mx-2"></i> $ @caja.montoCaja</strong></h3>
+    </div>
+
+    <button class="btn btn-info mt-2" @onclick="@ModalToggle"> Nuevo Movimiento de Caja</button>
+
+    @if (movimientosCaja.Count > 0)
+    {
+
+        <table class="table mt-4">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <td>Tipo</td>
+                    <td>Fecha</td>
+                    <td>Comprobante</td>
+
+                    <td>Entra</td>
+                    <td>Sale</td>
+
+                    <td>Importe</td>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (MovimientoCaja movimiento in movimientosCaja)
+                {
+
+                    <tr class="@(movimiento.fechaBaja != null? "text-danger":"")">
+                        <td>@movimiento.tipoMovimientoCaja.nombreTipoMovimientoCaja</td>
+                        <td>@movimiento.fechaAlta</td>
+                        <td><div class="btn btn-link">@(movimiento.comprobante != null ? movimiento.comprobante.codigo : "") <strong class="text-danger">@(movimiento.fechaBaja != null? " (ANULADO)":"")</strong></div></td>
+
+                        <td><i class="@(movimiento.entra ? " fas fa-check text-success" : "fas fa-times text-danger" )"></i></td>
+                        <td><i class="@(movimiento.sale ? " fas fa-check text-success" : "fas fa-times text-danger" )"></i></td>
+                        <td>$ @movimiento.importe</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    }
+
+
+    @*MODAL*@
+    <div class="modal p-0 fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog rounded border border-solid" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Nuevo Movimiento de Caja</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalToggle();  })">
+                        <span class="text-danger" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-2 m-1" data-spy="scroll">
+                    @*BODY *@
+                    <EditForm Model="@movimientoCaja" OnSubmit="@CrearMovimientoCaja">
+
+
+
+
+                        <div class="input-group mb-2 col-md-12 mt-2">
+                            <div class="col-md-12">
+                                <div class="input-group input-group-sm mb-1 mt-1">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Tipo Movimiento</span>
+                                    </div>
+                                    <select class="form-control" @onchange="@((ChangeEventArgs e)=> movimientoCaja.tipoMovimientoCaja = tipoMovimientosCaja.Where(x=> x.TipoMovimientoCajaId == Convert.ToInt32(e.Value.ToString())).First())">
+                                        <option selected disbled>Seleccione una Tipo de Movimiento</option>
+                                        @if (tipoMovimientosCaja.Count > 0)
+                                        {
+
+                                            @foreach (TipoMovimientoCaja tipo in tipoMovimientosCaja)
+                                            {
+                                                <option value="@tipo.TipoMovimientoCajaId">@tipo.nombreTipoMovimientoCaja</option>
+                                            }
+                                        }
+
+                                    </select>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 row mx-0">
+                            <div class="col-md-6 row mx-0 border border-solid rounded align-items-center">
+                                <div class="col-md-6">
+                                    <input type="radio" id="entra" name="drone" @onchange="@((ChangeEventArgs e)=> { if(e.Value.ToString() == "on"){ movimientoCaja.entra=true; movimientoCaja.sale=false; }})">
+                                    <label for="huey">Entra</label>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="radio" id="sale" name="drone" @onchange="@((ChangeEventArgs e)=> { if(e.Value.ToString() == "on"){ movimientoCaja.sale=true; movimientoCaja.entra=false; }})">
+                                    <label for="dewey">Sale</label>
+                                </div>
+
+                            </div>
+
+                            <div class="input-group mb-2 col-md-12 mt-2">
+                                <div class="input-group input-group-sm mb-1 mt-1">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Importe</span>
+                                    </div>
+                                    <input type="number" step="0.01" class="form-control" @bind-value="@movimientoCaja.importe">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center row col-md-12 mx-0 mt-2 mb-3">
+
+                            <button type="submit" class="btn btn-success col-md-12"><i class="fas fa-save mr-1"></i> Guardar</button>
+                        </div>
+
+                    </EditForm>
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+@code {
+    public Caja caja { get; set; } = new Caja();
+    public double montoInicial { get; set; } = 0.00;
+    public DateTime fechaCaja { get; set; } = DateTime.Now.AddHours(-3);
+    public bool ExisteCajaDiariaBandera { get; set; } = false;
+    public List<MovimientoCaja> movimientosCaja { get; set; } = new List<MovimientoCaja>();
+    public MovimientoCaja movimientoCaja { get; set; } = new MovimientoCaja();
+    public List<TipoMovimientoCaja> tipoMovimientosCaja { get; set; } = new List<TipoMovimientoCaja>();
+    protected override async Task OnInitializedAsync()
+    {
+
+
+        await ExisteCajaDiaria();
+        await ListarTiposMovimientoCaja();
+
+    }
+    protected async Task ExisteCajaDiaria()
+    {
+        ExisteCajaDiariaBandera = await http.PostJsonAsync<bool>($"/api/Caja/ExisteCajaDia", VariablesGlobales.sucursal);
+        if (ExisteCajaDiariaBandera == true)
+        {
+            await BuscarCaja();
+            await ListarMovimientos();
+        }
+    }
+
+    protected async Task BuscarCaja()
+    {
+        caja = await http.GetJsonAsync<Caja>($"/api/Caja/Buscar/{VariablesGlobales.sucursal.SucursalId}");
+
+    }
+
+    protected async Task ListarTiposMovimientoCaja()
+    {
+        tipoMovimientosCaja = await http.GetJsonAsync<List<TipoMovimientoCaja>>("/api/TipoMovimientoCaja/Listar");
+
+
+    }
+    protected async Task ListarMovimientos()
+    {
+        movimientosCaja = await http.GetJsonAsync<List<MovimientoCaja>>($"/api/Caja/ListarMovimientos/{caja.CajaId}");
+    }
+
+    protected async Task CrearMovimientoCaja()
+    {
+        if (movimientoCaja.tipoMovimientoCaja == null || movimientoCaja.tipoMovimientoCaja.TipoMovimientoCajaId == 0)
+        {
+            await Alerta("top-end", "error", "Tienes que seleccionar un tipo de movimeinto");
+        }
+        else if (!movimientoCaja.sale && !movimientoCaja.entra)
+        {
+            await Alerta("top-end", "error", "Tienes que seleccionar si el movimiento es de entrada o salida");
+        }
+        else if (movimientoCaja.importe == 0 || movimientoCaja.importe < 0)
+        {
+            await Alerta("top-end", "error", "El importe tiene que ser mayor que cero");
+
+        }
+        else
+        {
+            await http.PostJsonAsync<MovimientoCaja>($"/api/Caja/CrearMovimientoCaja/{caja.CajaId}", movimientoCaja);
+            await Alerta("top-end", "success", "Se creo correctamente el movimiento");
+            await BuscarCaja();
+            await ModalToggle();
+            await ListarMovimientos();
+
+        }
+
+    }
+
+    protected async Task CrearCajaDiaria()
+    {
+
+        await http.PostJsonAsync<Caja>($"/api/Caja/IniciarCaja/{montoInicial}", VariablesGlobales.sucursal);
+        await ExisteCajaDiaria();
+    }
+
+
+    public async Task ModalToggle()
+    {
+        await js.InvokeAsync<object>("ModalToggle");
+    }
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el proveedor con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+}

@@ -1,0 +1,105 @@
+﻿@page "/registro"
+<h3>Registro</h3>
+@*@attribute [Authorize(Roles = "Admin")]*@
+@using Microsoft.AspNetCore.Authorization;
+@inject HttpClient http
+@inject NavigationManager uriHelper
+@inject ILoginService loginService
+
+@using LaymarClientSide.Client.Auth
+
+<EditForm Model="userInfo" OnValidSubmit="CrearUsuario">
+    <DataAnnotationsValidator />
+    <div class="form-field">
+        <label>Username:</label>
+        <div>
+            <InputText Class="form-control" @bind-Value="@userInfo.username" />
+            <ValidationMessage For="@(() => userInfo.username)" />
+        </div>
+    </div>
+    <div class="form-field">
+        <label>Email:</label>
+        <div>
+            <InputText Class="form-control" @bind-Value="@userInfo.Email" />
+            <ValidationMessage For="@(() => userInfo.Email)" />
+        </div>
+    </div>
+    <div class="form-field">
+        <label>Password:</label>
+        <div>
+            <InputPassword Class="form-control" @bind-Value="@userInfo.Password" />
+            <ValidationMessage For="@(() => userInfo.Password)" />
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrar</button>
+
+</EditForm>
+@if (roles != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Roles</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @foreach(Roles r in userInfo.roles)
+                {
+
+
+                    <td class=""><input type="checkbox" @onclick="@(()=> AgregarRol(r))" />@r.rol</td>
+
+                }
+            </tr>
+        </tbody>
+
+    </table>
+}
+else
+{ <p>Cargado roles..</p>}
+@code {
+    List<string> rolesseleccionados = new List<string>();
+    string[] roles;
+    private UserInfo userInfo = new UserInfo();
+
+    protected async override Task OnInitializedAsync()
+    {
+
+        roles = await http.GetJsonAsync<string[]>("api/cuentas/roles");
+        Console.WriteLine(roles.Length);
+    }
+    private async Task CrearUsuario()
+    {
+
+        Console.WriteLine(userInfo);
+        var result = await http.PostJsonAsync<UserToken>("api/cuentas/crear", userInfo);
+        await loginService.Login(result.Token);
+        uriHelper.NavigateTo("");
+    }
+
+    public void AgregarRol(Roles rol)
+    {
+
+        if (userInfo.roles.Where(x => x.id.Contains(rol.id)).ToList().Count > 0)
+        {
+            userInfo.roles.Remove(rol);
+            Console.WriteLine($"se quito el rol {rol}");
+            foreach (var r in userInfo.roles)
+            {
+                Console.WriteLine(r);
+            }
+        }
+        else
+        {
+            userInfo.roles.Add(rol);
+            Console.WriteLine($"se agrego el rol {rol}");
+            foreach (var r in userInfo.roles)
+            {
+                Console.WriteLine(r);
+            }
+        }
+    }
+}
+

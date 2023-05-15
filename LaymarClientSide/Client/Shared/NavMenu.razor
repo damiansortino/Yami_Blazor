@@ -1,0 +1,288 @@
+﻿@inject NavigationManager uriHelper
+
+
+    <div class="top-row pl-4 navbar navbar-dark d-flex justify-content-center btn " @onclick="@(()=>uriHelper.NavigateTo("/"))">
+        <span class=" navbar-brand text-center" href="" style="color:#FFFF; font-size:2rem; text-shadow: 1px 1px 1px #2CACF3;">
+           <strong>Alma Libre</strong>
+        </span>
+        <button class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+<div class="@NavMenuCssClass">
+
+
+    <div class="accordion mt-4 pt-4 mx-2" id="accordionExample">
+
+        @*VENTAS*@
+        <AuthorizeView Roles="Ventas, Admin">
+
+            <div class="">
+                <div class="" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn text-white py-3 my-1 rounded border-bottom border-dark border-solid categoria text-left" style="        width: 100%;
+        text-shadow: 1px 1px 1px #2CACF3;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="pl-2"><i class="fas fa-cart-arrow-down mr-1 text-info" style="font-size:1.3rem;"></i>  <span class="" style="background-color:none">VENTAS</span></strong>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse border-right border-info border-solid" style="opacity:0.8; border-right:5px;" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="">
+                        <ul class="nav flex-column">
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="ConsultaProducto">
+                                    <strong><i class="fas fa-search mr-2 text-info"></i> Consulta Producto</strong>
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="nuevaVenta">
+                                    <strong><i class="fas fa-cart-arrow-down text-info mr-2"></i> Nueva venta</strong>
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="Ventas">
+                                    <strong> <i class="fas fa-file-invoice-dollar mr-2 text-info"></i> Ventas </strong>
+                                </NavLink>
+                            </li>
+                            <AuthorizeView Roles="Admin" Context="_context3">
+                                <Authorized>
+                                    <li class="nav-item px-2 py-1">
+                                        <NavLink class="nav-link py-0" href="VentasTarjeta">
+                                            <strong> <i class="fas fa-credit-card text-info mr-2"></i> Informe Tarjetas <i class="fas fa-user-shield ml-1 text-warning"></i></strong>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+
+                            </AuthorizeView>
+
+
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="cliente">
+                                    <strong> <i class="fas fa-users text-info mr-2" ></i> Cliente</strong>
+                                </NavLink>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </AuthorizeView>
+
+        @*COMPRAS*@
+        <AuthorizeView Roles="Compras, Admin">
+
+            <div class="">
+                <div class="" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn text-white py-3 my-1 rounded border-bottom border-dark border-solid categoria text-left" style="width:100%;text-shadow: 1px 1px 1px #2CACF3;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="pl-2"><i class="fas fa-shopping-basket mr-1 text-info" style="font-size:1.3rem;"></i>  COMPRAS</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse border-right border-info border-solid" style="opacity:0.8; border-right:5px" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="">
+                        <ul class="nav flex-column">
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="nuevaCompra">
+                                    <strong><i class="fas fa-shopping-basket mr-1 text-info mr-2"></i> Nueva Compra </strong>
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="Compras">
+                                    <strong><i class="fas fa-file-invoice-dollar mr-2 text-info"></i> Compras</strong>
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="proveedor">
+                                    <strong><i class="fas fa-users text-info mr-2"></i> Proveedor</strong>
+                                </NavLink>
+                            </li>
+                            >
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </AuthorizeView>
+        <AuthorizeView Roles="Stock, Admin">
+
+            <div class="">
+                <div class="" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn text-white py-3 my-1 rounded border-bottom border-dark border-solid categoria text-left" style="width:100%;text-shadow: 1px 1px 1px #2CACF3;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong class="pl-2"><i class="fas fa-cubes mr-1 text-info" style="font-size:1.3rem;"></i> STOCK</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse border-right border-info border-solid" style="opacity:0.8; border-right:5px solid" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="">
+                        <ul class="nav flex-column">
+
+
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="stockProducto">
+                                    <strong><i class="fas fa-cookie-bite mr-2 text-info"></i>Por Producto </strong>
+                                </NavLink>
+                            </li>
+                            <AuthorizeView Roles="Admin" Context="_context3">
+                                <Authorized>
+                                    <li class="nav-item px-2 py-1">
+                                        <NavLink class="nav-link py-0" href="stockValorizado">
+                                            <strong><i class="fas fa-truck-moving text-info mr-2"></i>Stock Valorizado <i class="fas fa-user-shield ml-1 text-warning"></i></strong>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                            </AuthorizeView>
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="movimientoStock">
+                                    <strong><i class="fas fa-shoe-prints text-info mr-2"></i> Movimientos</strong>
+                                </NavLink>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </AuthorizeView>
+        @*Tesoreria*@
+        <AuthorizeView Roles="Tesoreria, Admin">
+
+            <div class="">
+                <div class="" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn text-white py-3 my-1 rounded border-bottom border-dark border-solid categoria text-left" style="width:100%;text-shadow: 1px 1px 1px #2CACF3;text-shadow: 1px 1px 1px #2CACF3; " type="button" data-toggle="collapse" data-target="#tesoreria" aria-expanded="false" aria-controls="collapseThree">
+                            <strong class="pl-2"> <i class="fas fa-money-check-alt mr-1 text-info" style="font-size:1.3rem;"></i> TESORERIA</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="tesoreria" class="collapse border-right border-info border-solid" style="opacity:0.8; border-right:5px" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="">
+                        <ul class="nav flex-column">
+
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="caja">
+                                    <strong><i class="fas fa-money-check-alt mr-2 text-info"></i>Caja</strong>
+                                </NavLink>
+                            </li>
+                            <AuthorizeView Roles="Admin" Context="_context3">
+                                <Authorized>
+                                    <li class="nav-item px-2 py-1">
+                                        <NavLink class="nav-link py-0" href="ConsultaCaja">
+                                            <strong> <i class="fas fa-search mr-2 text-info"></i>Consulta Caja <i class="fas fa-user-shield ml-1 text-warning"></i></strong>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+
+                            </AuthorizeView>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </AuthorizeView>
+        @*Configuracion*@
+
+        <AuthorizeView Roles="Configuracion, Admin">
+
+            <div class="">
+                <div class="" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn text-white py-3 my-1 rounded border-bottom border-dark border-solid categoria text-left" style="width: 100%;text-shadow: 1px 1px 1px #2CACF3;" type="button" data-toggle="collapse" data-target="#configuracion" aria-expanded="false" aria-controls="collapseThree">
+                            <strong class="pl-2"> <i class="fas fa-cogs mr-1 text-info" style="font-size:1.3rem;"></i>  CONFIGURACION</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="configuracion" class="collapse border-right border-info border-solid" style="opacity:0.8; border-right:5px; border-right:5px" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="">
+                        <ul class="nav flex-column">
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="producto" Match="NavLinkMatch.All">
+                                    <strong><i class="fas fa-cookie-bite mr-2 text-info"></i> Producto</strong>
+                                </NavLink>
+                            </li>
+                            <AuthorizeView Roles="Admin" Context="_context3">
+                                <Authorized>
+                                    <li class="nav-item px-2 py-1">
+                                        <NavLink class="nav-link py-0" href="AumentoDePrecios">
+                                            <strong><i class="fas fa-clipboard-list text-info mr-2"></i> Precios <i class="fas fa-user-shield ml-1 text-warning"></i></strong>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                            </AuthorizeView>
+                            <AuthorizeView Roles="Admin" Context="_context3">
+                                <Authorized>
+                                    <li class="nav-item px-2 py-1">
+                                        <NavLink class="nav-link py-0" href="CodigosDeBarra">
+                                            <strong><i class="fas fa-barcode text-info mr-2"></i> Codigo de Barra <i class="fas fa-user-shield ml-1 text-warning"></i></strong>
+                                        </NavLink>
+                                    </li>
+                                </Authorized>
+                            </AuthorizeView>
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="sucursal">
+                                    <strong><i class="fas fa-warehouse mr-2 text-info"></i> Sucursales</strong>
+                                </NavLink>
+                            </li>
+
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="tipoMovimientoStock">
+                                    <strong><span class="far fa-dot-circle text-info mr-2" aria-hidden="true"></span>Movimiento Stock</strong>
+                                </NavLink>
+                            </li>
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="tipoMovimientoCaja">
+                                    <strong><span class="far fa-dot-circle text-info mr-2" aria-hidden="true"></span>Movimiento Caja</strong>
+                                </NavLink>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </AuthorizeView>
+
+        @*Admin*@
+        <AuthorizeView Roles="Admin">
+
+            <div class="">
+                <div class="" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn text-white py-3 my-1 rounded border-bottom border-dark border-solid categoria text-left" style="width:100%;text-shadow: 1px 1px 1px #2CACF3;" type="button" data-toggle="collapse" data-target="#admin" aria-expanded="false" aria-controls="collapseThree">
+                            <strong class="pl-2"><i class="fas fa-user-shield mr-1 text-info" style="font-size:1.3rem;"></i>  ADMIN</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="admin" class="collapse border-right border-info border-solid" style="opacity:0.8; border-right:5px" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="">
+                        <ul class="nav flex-column">
+
+                            <li class="nav-item px-2 py-1">
+                                <NavLink class="nav-link py-0" href="users">
+                                    <strong><i class="fas fa-users-cog mr-2 text-info"></i> Usuarios</strong>
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </AuthorizeView>
+
+    </div>
+
+</div>
+
+
+
+
+@code {
+        private bool collapseNavMenu = true;
+
+private string NavMenuCssClass => collapseNavMenu ? "collapseNavBar" : "collapse";
+
+private void ToggleNavMenu()
+{
+        collapseNavMenu = !collapseNavMenu;
+}
+}

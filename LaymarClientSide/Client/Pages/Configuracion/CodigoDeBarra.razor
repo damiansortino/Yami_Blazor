@@ -1,0 +1,379 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@attribute [Authorize(Roles = "Admin, Configuracion")]
+@inject HttpClient http
+@page  "/CodigosDeBarra"
+@inject IJSRuntime js
+@using LaymarClientSide.Shared.Dtos
+
+<h2 class="mt-2">
+    <strong>
+        <span class="badge badge-light">
+            <strong>CODIGOS DE BARRA <span class="badge badge-info">@codigosDeBarras.Sum(x => x.cantidadAImprimir)</span> - <span class="badge badge-light">@(Math.Ceiling((Convert.ToDouble(codigosDeBarras.Sum(x => x.cantidadAImprimir))/40))) hojas a imprimir</span></strong>
+        </span>
+    </strong>
+</h2>
+
+<button class="btn btn-info" @onclick="@(async () => await ModalToggle())">Buscar Codigo</button>
+
+<div class="row col-md-12 my-2 mx-0 px-0 ">
+    <div class="col-md-7 px-0 mx-0 form-inline">
+        <span class="badge badge-light col-md-5">Seleccione un rango de tiempo</span>
+        <select class="form-control col-md-7" @onchange="@(async (ChangeEventArgs e)=> await AgregarUltimosCreados(Convert.ToInt32(e.Value.ToString())))">
+            <option disabled></option>
+            <option value="24"> 1 Día</option>
+            <option value="72"> 3 Día</option>
+            <option value="168"> 7 Día</option>
+            <option value="720"> 1 Mes</option>
+            <option value="0"> Sin Rango</option>
+
+        </select>
+    </div>
+    <span class="col-md-3"></span>
+    <button class="btn btn-danger col-md-2" @onclick="@(()=>codigosDeBarras = new List<codigosDeBarraDtos>())"><strong>ELIMINAR TODOS</strong></button>
+</div>
+<table class="table table-sm">
+    <thead>
+        <tr class="bg-dark text-white">
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Talle</th>
+            <th>Color</th>
+            <th>Marca</th>
+
+            <th>Proveedor</th>
+            <th>Cantidad</th>
+            <th>Acciones</th>
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @foreach (codigosDeBarraDtos codigo in codigosDeBarras)
+        {
+
+            <tr class="">
+                <td><span class="barcode" style="font-size:2rem">@codigo.producto.codigo</span></td>
+                <td>
+
+                    <span class="badge @(codigo.cantidadAImprimir <= 0 ? "badge-danger":"badge-light") text-center">@codigo.producto.nombre</span>
+
+                </td>
+                <td>
+                    <span class="badge @(codigo.cantidadAImprimir <= 0 ? "badge-danger":"badge-light") text-center">@codigo.producto.talle</span>
+                </td>
+                <td>
+                    <span class="badge @(codigo.cantidadAImprimir <= 0 ? "badge-danger":"badge-light") text-center"> @codigo.producto.color </span>
+                </td>
+
+                <td>
+                    <span class="badge @(codigo.cantidadAImprimir <= 0 ? "badge-danger":"badge-light") text-center"> @codigo.producto.marca </span>
+                </td>
+
+                <td>
+                    <span class="badge @(codigo.cantidadAImprimir <= 0 ? "badge-danger":"badge-light") text-center"> @codigo.producto.proveedor.razonSocial </span>
+                </td>
+                <td><input class="form-control" type="number" min="1" @bind-value="@codigo.cantidadAImprimir"></td>
+                <th>
+                    <button class="btn text-danger  border border-solid rounded" title="Eliminar" @onclick="(() => codigosDeBarras.Remove(codigosDeBarras.Where(x=>x.producto ==codigo.producto).First()))"><i class="far fa-trash-alt text-danger"></i></button>
+                </th>
+
+            </tr>
+        }
+    </tbody>
+</table>
+@if (codigosDeBarras.Count > 0)
+{
+    <div class="col-md-12 d-flex justify-content-end mt-3">
+        <button class="btn btn-info" @onclick="DescargarCodigoDeBarra">
+            <i class="fas fa-file-excel mr-2"></i>  Descargar Codigos de Barra
+        </button>
+    </div>
+}
+
+
+<div class="modal p-0 fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl rounded border border-solid" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title">Codigos de Barra</h5>
+                <button type="button" class="close" data-dimdiss="modal" aria-label="Close" @onclick="@(async () => {await ModalToggle(); })">
+                    <span class="text-danger" aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-2 m-1" data-spy="scroll">
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-outline-secondary">@(criterioBusqueda == String.Empty ? "Nombre" : criterioBusqueda) </button>
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Codigo")">Codigo</a>
+                            <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Nombre")">Nombre</a>
+                            <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Proveedor")">Proveedor</a>
+
+
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" @bind-value="@cadenafiltroBusqueda" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e) => { FiltrarProducto(e); })">
+
+                </div>
+
+                <table class="table table-sm">
+                    <thead>
+                        <tr class="bg-dark text-white">
+                            <th>Código</th>
+                            <th>Nombre/Talle/Color/Marca</th>
+                            <th>Proveedor</th>
+                            <th>P. Costo</th>
+                            <th>% Rentabilidad</th>
+                            <th>P. Venta</th>
+                            <th>Acciones</th>
+
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                        @foreach (Producto producto in productosFiltrados)
+                        {
+
+                        <tr>
+                            <td><span class="barcode" style="font-size:2rem">@producto.codigo</span></td>
+                            <td>
+                                <h5 class="mt-1">
+
+                                    <span class="badge badge-light text-center">@producto.nombre</span>
+                                    <span class="badge badge-light text-center">@producto.talle</span>
+                                    <span class="badge badge-light text-center"> @producto.color </span>
+                                    <span class="badge badge-light text-center"> @producto.marca </span>
+                                </h5>
+                            </td>
+                            <td>
+                                <span class="badge badge-light text-center"> @producto.proveedor.razonSocial </span>
+                            </td>
+                            <td><span class="badge badge-light">@producto.precioUnitario</span></td>
+                            <td>
+                                <h5>
+                                    <span class="badge badge-light ">@(producto.porcentajeRentabilidad) %</span>
+
+                                </h5>
+                            </td>
+                            <td>
+                                <h5>
+                                    <span class="badge badge-light ">$ @(producto.precioUnitario * (producto.porcentajeRentabilidad / 100 + 1))</span>
+
+                                </h5>
+                            </td>
+                            <th>
+                                @if (codigosDeBarras.Where(x => x.producto == producto).ToList().Count == 0)
+                                {
+                                    <button class="btn border border-solid rounded" title="Agregar" @onclick="(() => agregarALaLista(producto))"><i class="fas fa-plus-circle text-info"></i></button>
+
+                                }
+                            </th>
+
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    List<Producto> productos = new List<Producto>();
+    List<Producto> productosFiltrados = new List<Producto>();
+    List<codigosDeBarraDtos> codigosDeBarras = new List<codigosDeBarraDtos>();
+    public string criterioBusqueda { get; set; } = "Nombre";
+    public string cadenafiltroBusqueda { get; set; } = String.Empty;
+    List<Stock> stocks = new List<Stock>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        await ListarProductos();
+    }
+    protected async Task ListarProductos()
+    {
+
+        productos = await http.GetJsonAsync<List<Producto>>("/api/Producto/Listar");
+        productosFiltrados = productos;
+
+    }
+
+    protected void FiltrarProducto(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (cadenafiltroBusqueda != "" && cadenafiltroBusqueda != string.Empty)
+            {
+                try
+                {
+                    if (criterioBusqueda == "Codigo")
+                    {
+                        productosFiltrados = productos.Where(x => x.ProductoId.ToString().ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+                    if (criterioBusqueda == "Nombre")
+                    {
+                        productosFiltrados = productos.Where(x => x.nombre.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+                    if (criterioBusqueda == "Marca")
+                    {
+                        productosFiltrados = productos.Where(x => x.marca.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+                    if (criterioBusqueda == "Proveedor")
+                    {
+                        productosFiltrados = productos.Where(x => x.proveedor.razonSocial.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+
+                }
+                catch (Exception)
+                {
+
+
+                }
+
+            }
+            else { productosFiltrados = productos; }
+        }
+    }
+
+
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el comprobante con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+    public async Task AgregarUltimosCreados(int cantidadHoras) {
+        List<Producto> ultimosCreados;
+        codigosDeBarras = new List<codigosDeBarraDtos>();
+        if (cantidadHoras != 0)
+        {
+            ultimosCreados = productos.Where(x => x.fechaAlta >= DateTime.Now.AddHours(cantidadHoras * -1)).ToList();
+        }
+        else {
+            ultimosCreados = productos;
+        }
+        foreach (Producto producto in ultimosCreados) {
+            await agregarALaLista(producto);
+        }
+    }
+
+    public async Task<List<Stock>> BuscarStockPorProducto(int productoId) {
+
+        return await http.GetJsonAsync<List<Stock>>($"api/Stock/ListarPorProducto/{productoId}");
+    }
+
+    public async Task agregarALaLista(Producto producto)
+    {
+        stocks = await BuscarStockPorProducto(producto.ProductoId);
+        codigosDeBarras.Add(new codigosDeBarraDtos { producto = producto, cantidadAImprimir = stocks.Sum(x => x.cantidad)});
+    }
+
+    protected async void DescargarCodigoDeBarra()
+    {
+
+        using (var package = new ExcelPackage())
+        {
+            var barCode = package.Workbook.Worksheets.Add($"CODIGOS DE BARRA");
+
+            // Use LINQ to project data into the worksheet
+            barCode.DefaultColWidth = 30;
+            barCode.DefaultRowHeight = 15.2;
+            barCode.Cells[$"A1:D{(productosFiltrados.Count / 4 + 3) * 2}"].Style.Fill.PatternType = ExcelFillStyle.Solid;
+            barCode.Cells[$"A1:D{(productosFiltrados.Count / 4 + 3) * 2}"].Style.Fill.BackgroundColor.SetColor(Color.White);
+
+
+            //HOJA DE CODIGOS DE BARRA
+            barCode.Column(1).Width = 23.9396;
+            barCode.Column(2).Width = 23.9396;
+            barCode.Column(3).Width = 23.9396;
+            barCode.Column(4).Width = 23.9396;
+            barCode.Column(1).Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            barCode.Column(1).Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            barCode.Column(2).Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            barCode.Column(2).Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            barCode.Column(3).Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            barCode.Column(3).Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            barCode.Column(4).Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            barCode.Column(4).Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            barCode.PrinterSettings.RightMargin = (0.6M / 2.54M);  //margen derecho
+            barCode.PrinterSettings.LeftMargin = (0.7M / 2.54M);   //margen izquierdo
+            barCode.PrinterSettings.TopMargin = (2.3M / 2.54M);    //margen superior
+            barCode.PrinterSettings.BottomMargin = (0.3M / 2.54M); //margen inferior
+            barCode.PrinterSettings.HeaderMargin = 0;       // Margen de encabezado
+            barCode.PrinterSettings.FooterMargin = 0;       // Margen pie de página
+                                                            //barCode.PrinterSettings.FitToPage = true;
+                                                            //barCode.PrinterSettings.FitToWidth = 100;
+                                                            //barCode.PrinterSettings.FitToHeight = 100;
+            int contador = 1;
+            int fila = 0;
+            int columna = 0;
+
+            for (int i = 0; i < codigosDeBarras.Count; i++)
+            {
+                for (int j = 0; j < codigosDeBarras[i].cantidadAImprimir; j++)
+                {
+                    if (Math.Floor((contador - 1) / 4D) == 0)
+                    {
+                        fila = Convert.ToInt32(Math.Ceiling((contador) / 4M));
+                        columna = (contador) % 4 == 0 ? 4 : (contador) % 4;
+                    }
+                    else if (Math.Floor((contador - 1) / 4D) == 1)
+                    {
+                        fila = Convert.ToInt32(Math.Ceiling((contador) / 4M) + 1);
+                        columna = (contador) % 4 == 0 ? 4 : (contador) % 4;
+                    }
+                    else
+                    {
+                        fila = Convert.ToInt32(Math.Ceiling((contador) / 4M) * 2 - 1);
+                        columna = (contador) % 4 == 0 ? 4 : (contador) % 4;
+
+                    }
+                    Console.WriteLine($"{contador} en [{fila},{columna}]");
+                    var codigo = barCode.Cells[fila, columna];
+                    var nombre = barCode.Cells[fila + 1, columna];
+
+
+                    codigo.Value = $"*{codigosDeBarras[i].producto.codigo}*";
+                    codigo.Style.Font.Name = "Bar-Code 39";
+                    codigo.Style.Font.Size = 20; //tamaño de la barra
+                    codigo.Style.VerticalAlignment = ExcelVerticalAlignment.Top;
+
+                    nombre.Value = $"{codigosDeBarras[i].producto.codigo}|{codigosDeBarras[i].producto.nombre}|{codigosDeBarras[i].producto.talle}|{codigosDeBarras[i].producto.color}|{codigosDeBarras[i].producto.marca}";
+                    nombre.Style.Font.Size = 10; //tamaño de la descripcion
+                    nombre.Style.VerticalAlignment = ExcelVerticalAlignment.Top;
+
+                    barCode.Row(fila).Height = 30; //alto de fila barra
+                    barCode.Row(fila + 1).Height = 44;  //alto de fila descripcion
+
+
+                    codigo.Style.Border.Top.Style = ExcelBorderStyle.None;
+                    codigo.Style.Border.Right.Style = ExcelBorderStyle.None;
+                    codigo.Style.Border.Left.Style = ExcelBorderStyle.None;
+
+                    nombre.Style.Border.Bottom.Style = ExcelBorderStyle.None;
+                    nombre.Style.Border.Right.Style = ExcelBorderStyle.None;
+                    nombre.Style.Border.Left.Style = ExcelBorderStyle.None;
+                    nombre.Style.WrapText = true;
+                    contador++;
+                }
+            }
+            await js.InvokeAsync<object>("saveAsFile", $"CODIGOS DE BARRA.xlsx", package.GetAsByteArray());
+
+        }
+
+    }
+    public async Task ModalToggle()
+    {
+        await js.InvokeAsync<object>("ModalToggle");
+    }
+}
+
+

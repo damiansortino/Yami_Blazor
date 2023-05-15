@@ -1,0 +1,373 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@inject HttpClient http
+@page  "/sucursal"
+@inject IJSRuntime js
+@attribute [Authorize(Roles = "Configuracion, Admin")]
+
+
+<h2 class="mt-2">
+
+    <strong>
+        <span class="badge badge-light">
+            <strong>SUCURSALES</strong>
+        </span>
+    </strong>
+</h2>
+<div class="botonera row col-md-12 mx-0 border bg-light border-solid rounded pt-2">
+    @*Boton Crear*@
+    <button class="btn text-primary btn-sm  mb-3 mr-2 border border-solid rounded" title="Crear" @onclick="@(async () => { await CrearSucursal(); await HabilitarFormulario(); })"><i class="fas fa-plus-circle"></i></button>
+    @* Boton Editar*@
+    @if (valido)
+    {
+        <button class="btn text-warning btn-sm  mb-3 mr-2 text-white border border-solid rounded " title="Editar" @onclick="@(async () => { AccionSobreSucursal = "Editar"; await HabilitarFormulario(); })"><i class="fas fa-edit"></i></button>
+        <button class="btn text-danger  mb-3 btn-sm border border-solid rounded" title="Anular" @onclick="@(async () => { await ModalConfirmToggle(); })"><i class="fas fa-ban"></i></button> @*Boton Anular*@
+
+    }
+    else
+    {
+        <button class="btn text-warning btn-sm  mb-3 mr-2 text-white border border-solid rounded disbled" disabled title="Editar" @onclick="@(async () => { AccionSobreSucursal = "Editar"; await HabilitarFormulario(); })"><i class="fas fa-edit"></i></button>
+        <button class="btn text-danger  mb-3 btn-sm border border-solid rounded disabled" disabled title="Anular" @onclick="@(async () => { await ModalConfirmToggle(); })"><i class="fas fa-ban"></i></button> @*Boton Anular*@
+
+    }
+
+    @*texto Buscar*@
+
+    <div class="input-group mb-3 col-md-3">
+        <div class="input-group-prepend input-group-sm" @onclick="@( async () => { await BuscarSucursal(cadenaBusqueda); await DeshabilitarFormulario(); })">
+            <span class="input-group-text" id="basic-addon1">Código</span>
+        </div>
+        <input type="text" class="form-control" @bind-value="@cadenaBusqueda" @bind-value:event="oninput" @onkeypress="@(async (KeyboardEventArgs e) => { if (e.Key == "Enter") { await BuscarSucursal(cadenaBusqueda); } })" />
+
+
+    </div>
+    @*Boton buscar*@
+    <button class="btn text-primary  mb-3 btn-sm border mr-2 border-solid rounded" title="Anular" @onclick="(async () => { sucursalesBuscados = sucursales; await ModalToggle(); })"><i class="fas fa-search m-0 p-0"></i></button> @*Boton Anular*@
+
+    @if (sucursales.Count > 0)
+    {
+
+
+        @*Boton Anterior*@
+        @if (sucursales.First() != sucursal)
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2" @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) - 1); await BuscarSucursal(cadenaBusqueda); await DeshabilitarFormulario();})">
+                <i class="fas fa-backward"></i>
+            </button>
+        }
+        else
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2 disabled" disabled @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) - 1); await BuscarSucursal(cadenaBusqueda); })">
+                <i class="fas fa-backward"></i>
+            </button>
+        }
+        @*Boton Siguiente*@
+
+        @if (sucursales.Last() != sucursal)
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2" @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) + 1); await BuscarSucursal(cadenaBusqueda); await DeshabilitarFormulario(); })">
+                <i class="fas fa-forward"></i>
+            </button>
+
+        }
+        else
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2 disabled" disabled @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) + 1); await BuscarSucursal(cadenaBusqueda); await DeshabilitarFormulario(); })">
+                <i class="fas fa-forward"></i>
+            </button>
+        }
+
+    }
+
+
+</div>
+
+@*FORMULARIO*@
+<div class="row col-md-12 mx-0 bg-dark mt-1 rounded"><h4 class="mt-2 text-white py-1"><strong>@AccionSobreSucursal.ToUpper()</strong></h4></div>
+
+<div class="bg-light mt-2">
+    <EditForm Model=@sucursal OnValidSubmit="@GuardarSucursal">
+        <ObjectGraphDataAnnotationsValidator />
+
+        <fieldset disabled id="FieldSetFormulario" class="">
+            @if (sucursal.fechaBaja != null)
+            {
+                <div class="row col-md-12 mx-0 mt-3"><h5 class="ml-2"><strong class="text-danger">Anulado @sucursal.fechaBaja</strong></h5></div>
+            }
+            <div class="input-group mb-2 col-md-12 mt-2">
+                <div class="col-md-4">
+                    <div class="input-group input-group-sm mb-1 mt-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Código</span>
+                        </div>
+                        <input type="text" class="form-control disabled" disabled @bind-value="@sucursal.SucursalId">
+
+                    </div>
+
+
+                </div>
+            </div>
+            @*DATOS  DEL PROVEEDOR*@
+            <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>DATOS DE LA SUCURSAL</strong></div>
+
+            <div class="row col-md-12 mx-0">
+
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Nombre Sucursal</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@sucursal.nombreSucursal">
+                    <ValidationMessage For="@(() => sucursal.nombreSucursal)" />
+
+                </div>
+            </div>
+
+        </fieldset>
+        @*Boton Guardar*@
+        <div class="d-flex justify-content-center row col-md-12 mx-0 px-0 mt-2">
+
+            @if (AccionSobreSucursal == "Crear" || AccionSobreSucursal == "Editar")
+            {
+                <button type="submit" class="btn btn-success col-md-12"><i class="fas fa-save mr-1"></i> Guardar</button>
+            }
+            else
+            {
+
+                <button type="submit" class="btn btn-success col-md-12 disabled" disabled><i class="fas fa-save mr-1"></i> Guardar</button>
+
+            }
+        </div>
+
+    </EditForm>
+
+    <div class="modal p-0 fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar Sucursal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalToggle();  })">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-3 m-2" data-spy="scroll">
+                    @*BODY *@
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-outline-secondary">@(criterioBusqueda == String.Empty ? "Nombre" : criterioBusqueda) </button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Codigo")">Codigo</a>
+
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Nombre")">Nombre</a>
+
+
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" @bind-value="@cadenafiltroBusqueda" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> {  FiltrarSucursal(e); })">
+
+                        <div>
+
+                        </div>
+
+                        <table class="table table-striped mt-3 table-sm">
+                            <thead class="bg-dark text-white">
+
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nombre Sucursal</th>
+                                    <th>Acciones</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (sucursales.Count > 0)
+                                {
+                                    @foreach (Sucursal sucursal in sucursalesBuscados)
+                                    {
+                                        <tr>
+                                            <td>@sucursal.SucursalId</td>
+                                            <td>@sucursal.nombreSucursal</td>
+
+                                            <td><button class="btn" @onclick="@(async () => { await BuscarSucursal(Convert.ToString(sucursal.SucursalId)); await ModalToggle(); cadenaBusqueda = Convert.ToString(sucursal.SucursalId); })"><i class="far fa-eye text-primary"></i></button></td>
+                                        </tr>
+                                    }
+
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="modal p-0 fade" id="modalConfirm" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CONFIRMAR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalConfirmToggle(); })">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-3 m-2" data-spy="scroll">
+                @*BODY *@
+
+                <p><strong>¿Desea anular esta sucursal? Una vez anulado no podrá volver atrás.</strong></p>
+                <div class="col-md-12 d-flex justify-content-center mt-4"> <button class="btn btn-success col-md-4" @onclick="@(async () => {await  AnularSucursal(); await ModalConfirmToggle(); })">OK</button><button class="btn btn-light ml-2 col-md-4" @onclick="@ModalConfirmToggle">CANCELAR</button></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    public bool valido { get; set; } = true;
+    public string cadenaBusqueda { get; set; }
+    public string cadenafiltroBusqueda { get; set; } = String.Empty;
+    public string criterioBusqueda { get; set; } = "Nombre";
+
+    public string AccionSobreSucursal { get; set; } = "Detalles";
+    public Sucursal sucursal { get; set; } = new Sucursal();
+    public List<Sucursal> sucursales { get; set; } = new List<Sucursal>();
+    public List<Sucursal> sucursalesBuscados { get; set; } = new List<Sucursal>();
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        await ListarSucursales();
+        if (sucursales.Count > 0)
+        {
+            sucursal = sucursales.Last();
+            cadenaBusqueda = Convert.ToString(sucursal.SucursalId);
+        }
+
+    }
+    protected async Task ListarSucursales()
+    {
+        sucursales = await http.GetJsonAsync<List<Sucursal>>("/api/Sucursal/Listar");
+    }
+
+    protected async Task BuscarSucursal(string codigo)
+    {
+        Sucursal sucursalEncontrado = null;
+        AccionSobreSucursal = "Detalles";
+        try
+        {
+            sucursalEncontrado = sucursales.Where(x => x.SucursalId == Convert.ToInt32(codigo)).First();
+
+        }
+        catch (Exception)
+        {
+
+        }
+
+        if (sucursalEncontrado != null)
+        {
+            sucursal = sucursalEncontrado;
+            if (sucursal.fechaBaja != null)
+            {
+                valido = false;
+            }
+            else { valido = true; }
+        }
+        else
+        {
+            cadenaBusqueda = Convert.ToString(sucursal.SucursalId);
+            await Alerta("top-end", "error", "Sucursal inexistente");
+
+        }
+        await DeshabilitarFormulario();
+
+    }
+
+    protected async Task GuardarSucursal()
+    {
+        @if (AccionSobreSucursal == "Crear")
+        {
+            await http.PostJsonAsync("/api/Sucursal/Crear", sucursal);
+            await DeshabilitarFormulario();
+
+            await Alerta("top-end", "success", "Se creó con éxito");
+            cadenaBusqueda = Convert.ToString(sucursal.SucursalId);
+
+        }
+        @if (AccionSobreSucursal == "Editar")
+        {
+
+            await http.PutJsonAsync($"/api/Sucursal/Editar/{sucursal.SucursalId}", sucursal);
+            await DeshabilitarFormulario();
+            await Alerta("top-end", "success", "Se editó con éxito");
+
+        }
+        AccionSobreSucursal = "Detalle";
+
+        await ListarSucursales();
+    }
+
+    protected async Task CrearSucursal()
+    {
+        AccionSobreSucursal = "Crear";
+        sucursal = new Sucursal();
+
+        valido = false;
+        await HabilitarFormulario();
+
+    }
+    protected async Task AnularSucursal()
+    {
+        await http.DeleteAsync($"/api/Sucursal/Anular/{sucursal.SucursalId}");
+        await ListarSucursales();
+    }
+
+    protected void FiltrarSucursal(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (cadenafiltroBusqueda != "" && cadenafiltroBusqueda != string.Empty)
+            {
+
+                if (criterioBusqueda == "Nombre")
+                {
+                    sucursalesBuscados = sucursales.Where(x => x.nombreSucursal.Contains(cadenafiltroBusqueda)).ToList();
+                }
+                if (criterioBusqueda == "Codigo")
+                {
+                    sucursalesBuscados = sucursales.Where(x => x.SucursalId.ToString().Contains(cadenafiltroBusqueda)).ToList();
+                }
+            }
+            else { sucursalesBuscados = sucursales; }
+        }
+    }
+    public async Task HabilitarFormulario()
+    {
+        await js.InvokeAsync<object>("EnabledFieldFormulario");
+    }
+    public async Task DeshabilitarFormulario()
+    {
+        await js.InvokeAsync<object>("DisabledFieldFormulario");
+    }
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el sucursal con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+    public async Task ModalToggle()
+    {
+        await js.InvokeAsync<object>("ModalToggle");
+    }
+
+    public async Task ModalConfirmToggle()
+    {
+        await js.InvokeAsync<object>("ModalConfirmToggle");
+    }
+}

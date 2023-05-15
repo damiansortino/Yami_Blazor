@@ -1,0 +1,148 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@inject HttpClient http
+@attribute [Authorize(Roles = "Admin")]
+@using LaymarClientSide.Shared.Dtos
+@page  "/ConsultaCaja"
+@inject IJSRuntime js
+
+<AuthorizeView>
+    <h2 class="mt-2">
+        <strong>
+            <span class="badge badge-light">
+                <strong>
+                    <i class="fas fa-search mr-2 text-info"></i>
+                    CONSULTA CAJA
+                </strong>
+            </span>
+        </strong>
+    </h2>
+
+
+    <div class="p-3 m-2 px-0" data-spy="scroll">
+        <div class="col-md-12 row mx-0 px-0">
+            <div class="input-group col-md-3 mb-3 mx-0 px-0">
+                <div class="input-group-prepend input-group-sm ">
+                    <span class="input-group-text " id="basic-addon1">Fecha</span>
+                </div>
+                <input type="date" class="form-control" value="@DateTime.Now.AddHours(-3).ToString("yyyy-MM-dd")" @onchange="@(async (ChangeEventArgs e) => { fecha = Convert.ToDateTime(e.Value.ToString()); await ConsultarCaja(); })" />
+            </div>
+            <div class="input-group mb-3 col-md-3">
+                <div class="input-group-prepend input-group-sm">
+                    <span class="input-group-text" id="basic-addon1">Sucursal</span>
+                </div>
+                <select class="form-control" @onchange="@(async (ChangeEventArgs e) => { if (e.Value.ToString() == "Todas") { sucursal = new Sucursal(); } else { sucursal = sucursales.Where(x => x.SucursalId == Convert.ToInt32(e.Value.ToString())).First(); }; await ConsultarCaja(); })">
+                    <option selected value="Todas">TODAS</option>
+                    @foreach (Sucursal _sucursal in sucursales)
+                    {
+                        if (_sucursal.SucursalId == sucursal.SucursalId)
+                        {
+
+                            <option selected value="@_sucursal.SucursalId">@_sucursal.nombreSucursal</option>
+                        }
+                        else
+                        {
+                            <option value="@_sucursal.SucursalId">@_sucursal.nombreSucursal</option>
+                        }
+                    }
+
+                </select>
+            </div>
+            </div>
+        </div>
+
+        @if (cajas.Count > 0)
+        {
+            @foreach (CajaDto caja in cajas)
+            {
+
+                <div class="card d-flex justify-content-center bg-light mt-4 p-4 col-md-12 row mx-0">
+                    <h3 class="col-md-12 row mx-0 "><strong>SUCURSAL: @caja.caja.sucursal.nombreSucursal - MONTO: <i class="fas fa-money-bill-wave text-success mx-2"></i> $ @caja.caja.montoCaja</strong></h3>
+                </div>
+
+
+                @if (caja.movimientosCaja.Count > 0)
+                {
+
+                    <table class="table table-sm">
+                        <thead class="bg-dark text-white">
+                            <tr>
+                                <td>Tipo</td>
+                                <td>Fecha</td>
+                                <td>Comprobante</td>
+
+                                <td>Entra</td>
+                                <td>Sale</td>
+
+                                <td>Importe</td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (MovimientoCaja movimiento in caja.movimientosCaja)
+                            {
+
+                                <tr class="@(movimiento.fechaBaja != null? "text-danger":"")">
+                                    <td>@movimiento.tipoMovimientoCaja.nombreTipoMovimientoCaja</td>
+                                    <td>@movimiento.fechaAlta</td>
+                                    <td><span class="btn btn-link">@(movimiento.comprobante != null ? movimiento.comprobante.codigo : "") <strong class="text-danger">@(movimiento.fechaBaja != null? " (ANULADO)":"")</strong></span></td>
+                                    <td><i class="@(movimiento.entra ? " fas fa-check text-success" : "fas fa-times text-danger" )"></i></td>
+                                    <td><i class="@(movimiento.sale ? " fas fa-check text-success" : "fas fa-times text-danger" )"></i></td>
+                                    <td>$ @movimiento.importe</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+
+                }
+
+
+
+            }
+
+        }
+        else
+        {
+            <h2><span class="badge badge-light">NO EXISTEN CAJAS EN ESTE PERIODO</span></h2>
+        }
+</AuthorizeView>
+
+@code {
+
+    public DateTime fecha { get; set; } = DateTime.Now.AddHours(-3);
+    public List<CajaDto> cajas { get; set; } = new List<CajaDto>();
+    public List<Sucursal> sucursales { get; set; } = new List<Sucursal>();
+    public Sucursal sucursal { get; set; } = new Sucursal();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ListarSucursales();
+        await ConsultarCaja();
+    }
+
+    protected async Task ListarSucursales()
+    {
+
+        sucursales = await http.GetJsonAsync<List<Sucursal>>("api/Sucursal/Listar");
+    }
+
+    protected async Task ConsultarCaja() {
+        if (sucursal.SucursalId == 0) {
+            cajas = await http.GetJsonAsync<List<CajaDto>>($"/api/Caja/ConsultarCaja/{fecha.ToString("dd-MM-yyyy")}/Todas");
+
+        }
+        else
+        {
+            Console.WriteLine($"/api/Caja/ConsultarCaja/{fecha.ToString("dd-MM-yyyy")}/{Convert.ToString(sucursal.SucursalId)}");
+            cajas = await http.GetJsonAsync<List<CajaDto>>($"/api/Caja/ConsultarCaja/{fecha.ToString("dd-MM-yyyy")}/{Convert.ToString(sucursal.SucursalId)}");
+
+
+        }
+    }
+
+
+    
+
+}
+
+

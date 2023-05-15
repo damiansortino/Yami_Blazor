@@ -1,0 +1,321 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@inject HttpClient http
+@page  "/tipoMovimientoCaja"
+@inject IJSRuntime js
+@attribute [Authorize(Roles = "Configuracion, Admin")]
+
+
+<h2 class="mt-2">
+
+    <strong>
+        <span class="badge badge-light">
+            <strong>TIPOS MOVIMIENTO CAJA</strong>
+        </span>
+    </strong>
+</h2>
+<div class="botonera row col-md-12 mx-0 border bg-light border-solid rounded pt-2">
+    @*Boton Crear*@
+    <button class="btn text-primary btn-sm  mb-3 mr-2 border border-solid rounded" title="Crear" @onclick="@(async () => { await CrearTipoMovimientoCaja(); await HabilitarFormulario(); })"><i class="fas fa-plus-circle"></i></button>
+
+
+    @*texto Buscar*@
+
+    <div class="input-group mb-3 col-md-3">
+        <div class="input-group-prepend input-group-sm" @onclick="@( async () => { await BuscarTipoMovimientoCaja(cadenaBusqueda); await DeshabilitarFormulario(); })">
+            <span class="input-group-text" id="basic-addon1">Código</span>
+        </div>
+        <input type="text" class="form-control" @bind-value="@cadenaBusqueda" @bind-value:event="oninput" @onkeypress="@(async (KeyboardEventArgs e) => { if (e.Key == "Enter") { await BuscarTipoMovimientoCaja(cadenaBusqueda); } })" />
+
+
+    </div>
+    @*Boton buscar*@
+    <button class="btn text-primary  mb-3 btn-sm border mr-2 border-solid rounded" title="Anular" @onclick="(async () => { tipoMovimientosStockBuscados = tipoMovimientosStock; await ModalToggle(); })"><i class="fas fa-search m-0 p-0"></i></button> @*Boton Anular*@
+
+    @if (tipoMovimientosStock.Count > 0)
+    {
+
+
+        @*Boton Anterior*@
+        @if (tipoMovimientosStock.First() != tipoMovimientoCaja)
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2" @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) - 1); await BuscarTipoMovimientoCaja(cadenaBusqueda); await DeshabilitarFormulario();})">
+                <i class="fas fa-backward"></i>
+            </button>
+        }
+        else
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2 disabled" disabled @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) - 1); await BuscarTipoMovimientoCaja(cadenaBusqueda); })">
+                <i class="fas fa-backward"></i>
+            </button>
+        }
+        @*Boton Siguiente*@
+
+        @if (tipoMovimientosStock.Last() != tipoMovimientoCaja)
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2" @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) + 1); await BuscarTipoMovimientoCaja(cadenaBusqueda); await DeshabilitarFormulario(); })">
+                <i class="fas fa-forward"></i>
+            </button>
+
+        }
+        else
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2 disabled" disabled @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) + 1); await BuscarTipoMovimientoCaja(cadenaBusqueda); await DeshabilitarFormulario(); })">
+                <i class="fas fa-forward"></i>
+            </button>
+        }
+
+    }
+
+
+</div>
+
+@*FORMULARIO*@
+<div class="row col-md-12 mx-0 bg-dark mt-1 rounded"><h4 class="mt-2 text-white py-1"><strong>@AccionSobreTipoMovimientoCaja.ToUpper()</strong></h4></div>
+
+<div class="bg-light mt-2">
+    <EditForm Model=@tipoMovimientoCaja OnValidSubmit="@GuardarTipoMovimientoCaja">
+        <ObjectGraphDataAnnotationsValidator />
+
+        <fieldset disabled id="FieldSetFormulario" class="">
+
+            <div class="input-group mb-2 col-md-12 mt-2">
+                <div class="col-md-4">
+                    <div class="input-group input-group-sm mb-1 mt-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Código</span>
+                        </div>
+                        <input type="text" class="form-control disabled" disabled @bind-value="@tipoMovimientoCaja.TipoMovimientoCajaId">
+
+                    </div>
+
+
+                </div>
+            </div>
+            @*DATOS  DEL PROVEEDOR*@
+            <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>DATOS DE LA TIPO MOVIMIENTO CAJA</strong></div>
+
+            <div class="row col-md-12 mx-0">
+
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Nombre TipoMovimientoCaja</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@tipoMovimientoCaja.nombreTipoMovimientoCaja">
+                    <ValidationMessage For="@(() => tipoMovimientoCaja.nombreTipoMovimientoCaja)" />
+
+                </div>
+            </div>
+
+        </fieldset>
+        @*Boton Guardar*@
+        <div class="d-flex justify-content-center row col-md-12 mx-0 px-0 mt-2">
+
+            @if (AccionSobreTipoMovimientoCaja == "Crear" || AccionSobreTipoMovimientoCaja == "Editar")
+            {
+                <button type="submit" class="btn btn-success col-md-12"><i class="fas fa-save mr-1"></i> Guardar</button>
+            }
+            else
+            {
+
+                <button type="submit" class="btn btn-success col-md-12 disabled" disabled><i class="fas fa-save mr-1"></i> Guardar</button>
+
+            }
+        </div>
+
+    </EditForm>
+
+    <div class="modal p-0 fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar TipoMovimientoCaja</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalToggle();  })">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-3 m-2" data-spy="scroll">
+                    @*BODY *@
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-outline-secondary">@(criterioBusqueda == String.Empty ? "Nombre" : criterioBusqueda) </button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Codigo")">Codigo</a>
+
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Nombre")">Nombre</a>
+
+
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" @bind-value="@cadenafiltroBusqueda" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> {  FiltrarTipoMovimientoCaja(e); })">
+
+                        <div>
+
+                        </div>
+
+                        <table class="table table-striped mt-3 table-sm">
+                            <thead class="bg-dark text-white">
+
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nombre TipoMovimientoCaja</th>
+                                    <th>Acciones</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (tipoMovimientosStock.Count > 0)
+                                {
+                                    @foreach (TipoMovimientoCaja tipoMovimientoCaja in tipoMovimientosStockBuscados)
+                                    {
+                                        <tr>
+                                            <td>@tipoMovimientoCaja.TipoMovimientoCajaId</td>
+                                            <td>@tipoMovimientoCaja.nombreTipoMovimientoCaja</td>
+
+                                            <td><button class="btn" @onclick="@(async () => { await BuscarTipoMovimientoCaja(Convert.ToString(tipoMovimientoCaja.TipoMovimientoCajaId)); await ModalToggle(); cadenaBusqueda = Convert.ToString(tipoMovimientoCaja.TipoMovimientoCajaId); })"><i class="far fa-eye text-primary"></i></button></td>
+                                        </tr>
+                                    }
+
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+@code {
+    public bool valido { get; set; } = true;
+    public string cadenaBusqueda { get; set; }
+    public string cadenafiltroBusqueda { get; set; } = String.Empty;
+    public string criterioBusqueda { get; set; } = "Nombre";
+
+    public string AccionSobreTipoMovimientoCaja { get; set; } = "Detalles";
+    public TipoMovimientoCaja tipoMovimientoCaja { get; set; } = new TipoMovimientoCaja();
+    public List<TipoMovimientoCaja> tipoMovimientosStock { get; set; } = new List<TipoMovimientoCaja>();
+    public List<TipoMovimientoCaja> tipoMovimientosStockBuscados { get; set; } = new List<TipoMovimientoCaja>();
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+
+        await ListarTipoMovimientosStock();
+        if (tipoMovimientosStock.Count > 0)
+        {
+            tipoMovimientoCaja = tipoMovimientosStock.Last();
+            cadenaBusqueda = Convert.ToString(tipoMovimientoCaja.TipoMovimientoCajaId);
+        }
+
+    }
+    protected async Task ListarTipoMovimientosStock()
+    {
+        tipoMovimientosStock = await http.GetJsonAsync<List<TipoMovimientoCaja>>("/api/TipoMovimientoCaja/Listar");
+    }
+
+    protected async Task BuscarTipoMovimientoCaja(string codigo)
+    {
+        TipoMovimientoCaja tipoMovimientoCajaEncontrado = null;
+        AccionSobreTipoMovimientoCaja = "Detalles";
+        try
+        {
+            tipoMovimientoCajaEncontrado = tipoMovimientosStock.Where(x => x.TipoMovimientoCajaId == Convert.ToInt32(codigo)).First();
+
+        }
+        catch (Exception)
+        {
+
+        }
+
+        if (tipoMovimientoCajaEncontrado != null)
+        {
+            tipoMovimientoCaja = tipoMovimientoCajaEncontrado;
+            valido = true;
+        }
+        else
+        {
+            cadenaBusqueda = Convert.ToString(tipoMovimientoCaja.TipoMovimientoCajaId);
+            await Alerta("top-end", "error", "TipoMovimientoCaja inexistente");
+
+        }
+        await DeshabilitarFormulario();
+
+    }
+
+    protected async Task GuardarTipoMovimientoCaja()
+    {
+        @if (AccionSobreTipoMovimientoCaja == "Crear")
+        {
+            await http.PostJsonAsync("/api/TipoMovimientoCaja/Crear", tipoMovimientoCaja);
+            await DeshabilitarFormulario();
+
+            await Alerta("top-end", "success", "Se creó con éxito");
+            cadenaBusqueda = Convert.ToString(tipoMovimientoCaja.TipoMovimientoCajaId);
+
+        }
+
+        AccionSobreTipoMovimientoCaja = "Detalle";
+
+        await ListarTipoMovimientosStock();
+    }
+
+    protected async Task CrearTipoMovimientoCaja()
+    {
+        AccionSobreTipoMovimientoCaja = "Crear";
+        tipoMovimientoCaja = new TipoMovimientoCaja();
+
+        valido = false;
+        await HabilitarFormulario();
+
+    }
+
+
+    protected void FiltrarTipoMovimientoCaja(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (cadenafiltroBusqueda != "" && cadenafiltroBusqueda != string.Empty)
+            {
+
+                if (criterioBusqueda == "Nombre")
+                {
+                    tipoMovimientosStockBuscados = tipoMovimientosStock.Where(x => x.nombreTipoMovimientoCaja.Contains(cadenafiltroBusqueda)).ToList();
+                }
+                if (criterioBusqueda == "Codigo")
+                {
+                    tipoMovimientosStockBuscados = tipoMovimientosStock.Where(x => x.TipoMovimientoCajaId.ToString().Contains(cadenafiltroBusqueda)).ToList();
+                }
+            }
+            else { tipoMovimientosStockBuscados = tipoMovimientosStock; }
+        }
+    }
+    public async Task HabilitarFormulario()
+    {
+        await js.InvokeAsync<object>("EnabledFieldFormulario");
+    }
+    public async Task DeshabilitarFormulario()
+    {
+        await js.InvokeAsync<object>("DisabledFieldFormulario");
+    }
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el tipoMovimientoCaja con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+    public async Task ModalToggle()
+    {
+        await js.InvokeAsync<object>("ModalToggle");
+    }
+}

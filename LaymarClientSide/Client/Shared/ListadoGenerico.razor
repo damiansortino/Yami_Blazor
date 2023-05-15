@@ -1,0 +1,50 @@
+﻿@typeparam T
+<style>
+</style>
+
+@if (listado == null)
+{
+    <div class="col-md-12 mx-0">
+        <div class="col-md-6 offset-md-3 text-center">
+            <div class="loadingio-spinner-gear-6fy6tnognl6">
+                <div class="ldio-0hnwc57mubea">
+                    <div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="loadingio-spinner-gear-25iylaucyg7">
+    <div class="ldio-ltxbqpj0lik">
+        <div> <div> </div> <div> </div> <div> </div> <div> </div> <div> </div> <div> </div> </div>
+    </div>
+</div>
+
+}
+else if (listado.Count == 0)
+{
+    if (NoHayRegistros != null)
+
+    {
+        @NoHayRegistros
+
+    }
+    else
+    {
+        <p><strong>No hay registros para mostrar</strong></p>
+    }
+}
+else
+{
+    @HayRegistros
+}
+
+@code
+{
+    [Parameter] public List<T> listado { get; set; }
+    [Parameter]
+
+    public RenderFragment HayRegistros { get; set; }
+    [Parameter]
+    public RenderFragment NoHayRegistros { get; set; }
+
+}

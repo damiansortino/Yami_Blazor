@@ -1,0 +1,75 @@
+﻿@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@using LaymarClientSide.Client.Pages.Auth
+@using LaymarClientSide.Shared.Entidades
+@inject NavigationManager uriHelper
+@inject HttpClient http
+
+
+<AuthorizeView>
+    <Authorized>
+
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+
+        <div class="main" id="main">
+            <div class="top-row px-4 mt-0">
+                <EnlacesLogin>
+                </EnlacesLogin>
+            </div>
+
+            <div class="content p-0 mt-0">
+                
+                @if (revisar())
+                {
+
+                    @Body
+                }
+                else
+                {
+                <p class="mt-4"> <strong>Recargar la pagina haciendo <button class="btn btn-link" @onclick="@(()=>uriHelper.NavigateTo(uriHelper.Uri))"><i class="fas fa-sync text-info"></i> Click acá </button> </strong></p>
+                }
+            </div>
+        </div>
+
+
+
+
+    </Authorized>
+    <NotAuthorized>
+
+        <div class="main" id="main">
+
+
+            <div class="content p-4 mt-4">
+                @if (uriHelper.Uri.Contains("ConsultarProducto"))
+                {
+<LaymarClientSide.Client.Pages.Ventas.ConsultaProductoComponent></LaymarClientSide.Client.Pages.Ventas.ConsultaProductoComponent>    
+                }
+                else
+                {
+
+                    <Login>
+
+                    </Login>}
+
+            </div>
+        </div>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code{
+
+    protected bool revisar()
+    {
+
+        @if (VariablesGlobales.sucursal != null && VariablesGlobales.sucursal.SucursalId != 0)
+        {
+            return true;
+        }
+        else{ return false; }
+    }
+ 
+}

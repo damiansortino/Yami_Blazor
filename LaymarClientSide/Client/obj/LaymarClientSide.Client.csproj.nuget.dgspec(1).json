@@ -1,0 +1,175 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj",
+        "projectName": "LaymarClientSide.Client",
+        "projectPath": "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj",
+        "packagesPath": "C:\\Users\\DAMIAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DAMIAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj": {
+                "projectPath": "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[15.0.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[5.0.1-beta, )"
+            },
+            "Microsoft.AspNetCore.Blazor": {
+              "target": "Package",
+              "version": "[3.1.0-preview3.19555.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0-preview3.19555.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.DataAnnotations.Validation": {
+              "target": "Package",
+              "version": "[3.1.0-preview3.19555.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0-preview3.19555.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.HttpClient": {
+              "target": "Package",
+              "version": "[3.1.0-preview3.19555.2, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0-preview3.19555.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj",
+        "projectName": "LaymarClientSide.Shared",
+        "projectPath": "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj",
+        "packagesPath": "C:\\Users\\DAMIAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DAMIAN\\Desktop\\LAYMAR_200521\\LaymarClientSide\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DAMIAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Blazor.DataAnnotations.Validation": {
+              "target": "Package",
+              "version": "[3.1.0-preview3.19555.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

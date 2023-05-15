@@ -1,0 +1,704 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@inject HttpClient http
+@attribute [Authorize(Roles = "Ventas, Admin")]
+@using LaymarClientSide.Shared.Dtos
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@page  "/Ventas"
+
+
+@inject IJSRuntime js
+<AuthorizeView>
+    <h2 class="mt-2">
+        <strong>
+            <span class="badge badge-light">
+                <strong><i class="fas fa-file-invoice-dollar mr-2 text-info"></i>VENTAS</strong>
+            </span>
+        </strong>
+    </h2>
+    <div class="botonera row col-md-12 mx-0 border bg-light border-solid rounded pt-2">
+
+
+        @*texto Buscar*@
+
+        <div class="input-group mb-3 col-md-3">
+            <div class="input-group-prepend input-group-sm" @onclick="@(async () =>  await BuscarVenta(cadenaBusqueda))">
+                <span class="input-group-text" id="basic-addon1">Código</span>
+            </div>
+            <input type="text" class="form-control" @bind-value="@cadenaBusqueda" @bind-value:event="oninput" @onkeypress="@(async (KeyboardEventArgs e) => { if (e.Key == "Enter") { await BuscarVenta(cadenaBusqueda); } })" />
+
+
+        </div>
+        @*Boton buscar*@
+        <button class="btn text-primary  mb-3 btn-sm border mr-2 border-solid rounded" title="Buscar" @onclick="(async () => { ventasBuscadas = ventas; await ModalToggle(); })"><i class="fas fa-search m-0 p-0"></i></button> @*Boton Anular*@
+
+        @if (ventas.Count > 0)
+        {
+
+            <button class="btn text-danger  mb-3 btn-sm border border-solid rounded" title="Anular" @onclick="@(async () => { await ModalConfirmToggle(); })"><i class="fas fa-ban"></i></button> @*Boton Anular*@
+        }
+
+
+    </div>
+
+
+    <div class="row col-md-12 mx-0 mt-3">
+
+        <fieldset id="FieldSetFormulario" class="border border-solid rounded p-0 m-0 col-md-12 row @(venta.comprobante.fechaBaja != null ? "border-danger":"")">
+            @*DATOS  DEL COMPROBANTE*@
+            @if (ventas.Count > 0)
+            {
+                <div class="bg-light">
+                    <div class="row 2 mx-0 mb-2 border-top border-solid bg-dark text-white px-4 pt-3"><h3><strong>DATOS DE LA VENTA</strong></h3></div>
+
+                    <div class="justify-content-end d-flex row col-md-12 mt-4 mx-0 form-inline">
+                        <h5 class="col-md-9">
+
+                            <span class="badge badge-light pl-4">
+                                <strong>CLIENTE:</strong>
+                            </span>
+                            <span class="badge badge-info text-left">
+                                @venta.comprobante.personaJuridica.razonSocial
+                            </span>
+                        </h5>
+
+                        <h5 class="col-md-3">
+                            <span class="badge badge-light">
+                                <strong>FECHA: </strong>
+                            </span>
+                            <strong>
+                                <span class="badge badge-light">
+                                    @venta.comprobante.fechaAlta.ToString("dd/MM/yyyy")
+                                </span>
+                            </strong>
+                        </h5>
+                    </div>
+
+                    <div class="row col-md-12 form-inline mx-0 ">
+
+
+                        <h5 class=" col-md-9 ">
+                        </h5>
+
+                        <h5 class="col-md-3 ">
+
+                            <span class="badge badge-light ">
+                                <strong>SUCURSAL:</strong>
+                            </span>
+                            <strong>
+                                <span class="badge badge-info ">
+                                    @venta.comprobante.sucursal.nombreSucursal
+                                </span>
+                            </strong>
+
+                        </h5>
+
+                    </div>
+
+                    <div class="justify-content-end d-flex row col-md-12 mx-0">
+
+                        <h5 class="mt-2 col-md-3">
+                            <span class="badge badge-light">
+                                <strong>VENDEDOR: </strong>
+                            </span>
+                            <strong>
+                                <span class="badge badge-info">
+                                    @venta.comprobante.UserName
+                                </span>
+                            </strong>
+
+                        </h5>
+                    </div>
+
+                </div>
+
+
+                <table class="row col-md-12 mx-0 px-0 table px-1  table-sm mt-2 table-responsive-sm table-bordered table-hover">
+                    <thead class="bg-light col-md-12 mx-0 px-0 ">
+                        <tr class="col-md-12 row mx-0 px-0 text-center d-flex justify-content-center bg-info text-white " style="height:2.5rem">
+                            <th class="col-md-1" style="height:2.5rem">CODIGO</th>
+                            <th class="col-md-7" style="height:2.5rem">DESCRIPCION TALLE COLOR  MARCA</th>
+
+                            <th class="col-md-1" style="height:2.5rem">CANTIDAD</th>
+                            <th class="col-md-1" style="height:2.5rem">P/UNIDAD</th>
+                            <th class="col-md-1" style="height:2.5rem">DESC.</th>
+                            <th class="col-md-1" style="height:2.5rem">IMPORTE</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="col-md-12 mx-0 px-0">
+                        @foreach (DetalleFactura detalleFactura in venta.detalles)
+                        {
+                            <tr class="col-md-12 row mx-0 px-0 " style="height:2.5rem">
+                                <td class="col-md-1 form-inline text-center" style="height:2.5rem; padding:2px 8px 2px 8px">
+                                    <span class="badge badge-light text-center">@detalleFactura.producto.ProductoId</span>
+                                </td>
+
+                                <td class="col-md-7 text-center " style="height:2.5rem; padding:2px 8px 2px 8px">
+                                    <h5 class="mt-1">
+
+                                        <span class="badge badge-light text-center">@detalleFactura.producto.nombre</span>
+                                        <span class="badge badge-light text-center">@detalleFactura.producto.talle</span>
+
+                                        <span class="badge badge-light text-center"> @detalleFactura.producto.color </span>
+                                        <span class="badge badge-light text-center"> @detalleFactura.producto.marca </span>
+                                    </h5>
+
+                                </td>
+
+
+
+                                <td class="col-md-1" style="height:2.5rem; padding:2px 8px 2px 8px">
+                                    <span class="badge badge-light text-center"> @detalleFactura.cantidad </span>
+                                </td>
+                                <td class="col-md-1 text-center " style="height:2.5rem; padding:2px 8px 2px 8px">
+                                    <h5>
+
+                                        <span class="badge badge-light text-center">
+                                            $@(detalleFactura.producto.precioUnitario * (detalleFactura.producto.porcentajeRentabilidad / 100 + 1))
+                                        </span>
+                                    </h5>
+
+                                </td>
+                                <td class="col-md-1" style="height:2.5rem; padding:2px 8px 2px 8px">
+                                    <span class="badge badge-light text-center"> @detalleFactura.bonificacion </span>
+
+                                </td>
+                                <td class="col-md-1 text-center" style="height:2.5rem; padding:2px 8px 2px 8px">
+                                    <h5>
+                                        <span class="badge badge-light text-center">
+                                            $@(((detalleFactura.producto.precioUnitario * (detalleFactura.producto.porcentajeRentabilidad / 100 + 1)) - detalleFactura.bonificacion) * detalleFactura.cantidad)
+                                        </span>
+                                    </h5>
+                                </td>
+
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <div class="row col-md-12 mx-0 my-3 px-0">
+                    <div class="row 2 col-md-12 mx-0 bg-dark mt-1 rounded text-white mb-4 px-0">
+                        <h5 class="mt-2 pl-4">
+                            <strong><i class="far fa-file-alt text-info mr-1"></i>RESUMEN</strong>
+                        </h5>
+                    </div>
+
+                    <div class="col-md-12 row mx-0 form-inline">
+                        <h5 class="col-md-12 row mx-0">
+                            <span class="badge badge-light text-left col-md-6">
+                                <strong>SUBTOTAL: $@venta.detalles.Sum(x => x.cantidad * ((x.producto.precioUnitario * (x.producto.porcentajeRentabilidad / 100 + 1)) - x.bonificacion))</strong>
+                            </span>
+
+                            <span class="badge badge-light text-left col-md-6 d-flex justify-content-end">
+                                <strong class="mt-1">
+                                    <i class="fas fa-money-bill text-success"></i>EFECTIVO: $ @(venta.comprobante.efectivo)
+                                </strong>
+
+                            </span>
+                        </h5>
+                    </div>
+
+                    <div class="col-md-12 row mx-0 mx-0 ">
+
+
+                        <h5 class="col-md-12 row mx-0 form-inline">
+                            <span class="badge badge-light text-left col-md-6">
+                                <strong class="mt-1"> BONIFICACION: $ @(venta.comprobante.bonificacion)</strong>
+
+                            </span>
+                            <span class="badge badge-light text-left col-md-6 d-flex justify-content-end">
+                                <strong class="mt-1">
+                                    <i class="fas fa-credit-card text-info"></i>
+                                    TARJETA: $ @(venta.comprobante.tarjeta)
+                                </strong>
+
+                            </span>
+                        </h5>
+                    </div>
+
+
+                    <div class="col-md-12 row mx-0">
+                        <h5 class="col-md-12 row mx-0">
+
+                            <span class="badge badge-dark text-left col-md-6">
+                                <strong>TOTAL VENTA: $@(venta.detalles.Sum(x => x.cantidad * ((x.producto.precioUnitario * (x.producto.porcentajeRentabilidad / 100 + 1)) - x.bonificacion)) - venta.comprobante.bonificacion)</strong>
+                            </span>
+
+                            <span class="badge badge-dark text-left col-md-6 d-flex justify-content-end">
+                                <strong>TOTAL PAGO: $@(venta.comprobante.tarjeta + venta.comprobante.efectivo)</strong>
+                            </span>
+                        </h5>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="col-md-12 row mx-0">
+                    <h4>
+                        <span class="badge badge-dark text-left d-flex justify-content-lg-start mt-4">
+                            <strong>
+                                NO SE ENCONTRARON VENTA EN ESTE PERIODO
+                                <span class="col-md-12 row">Desde: @fechaDesde.ToString("dd/MM/yyyy") - Hasta: @fechaHasta.ToString("dd/MM/yyyy")</span>
+                                <span class="col-md-12 row">Sucursal: @(sucursal != null ? sucursal.nombreSucursal : "")</span>
+                                <span class="col-md-12 row">Vendedor: @(user != null ? user.username : "")</span>
+
+                            </strong>
+                        </span>
+                    </h4>
+                </div>
+            }
+        </fieldset>
+
+    </div>
+
+
+
+
+    @*MODAL*@
+    <div class="modal p-0 fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUSCAR VENTAS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalToggle();  })">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-3 m-2" data-spy="scroll">
+                    @*BODY *@
+                    <div class="col-md-12 row mx-0 px-0">
+                        <AuthorizeView Roles="Admin" Context="_context2">
+                            <Authorized>
+                                <div class="input-group col-md-3 mb-3 mx-0 px-0">
+                                    <div class="input-group-prepend input-group-sm ">
+                                        <span class="input-group-text " id="basic-addon1">Desde</span>
+                                    </div>
+                                    <input type="date" class="form-control" value="@DateTime.Now.AddHours(-3).ToString("yyyy-MM-dd")" @onchange="@(async (ChangeEventArgs e)=> { fechaDesde = Convert.ToDateTime(e.Value.ToString()); await ListarVentas(); })" />
+                                </div>
+                                <div class="input-group mb-3 col-md-3">
+                                    <div class="input-group-prepend input-group-sm">
+                                        <span class="input-group-text" id="basic-addon1">Hasta</span>
+                                    </div>
+                                    <input type="date" class="form-control" value="@DateTime.Now.AddHours(-3).ToString("yyyy-MM-dd")" @onchange="@(async (ChangeEventArgs e)=> { fechaHasta = Convert.ToDateTime(e.Value.ToString()); await ListarVentas(); })" />
+                                </div>
+
+
+                                <div class="input-group mb-3 col-md-3">
+                                    <div class="input-group-prepend input-group-sm">
+                                        <span class="input-group-text" id="basic-addon1">Sucursal</span>
+                                    </div>
+                                    <select class="form-control" @onchange="@(async(ChangeEventArgs e)=> { if (e.Value.ToString() == "TODAS") { sucursal = new Sucursal(); } else { sucursal = sucursales.Where(x => x.SucursalId == Convert.ToInt32(e.Value.ToString())).First(); }await ListarVentas();  })">
+
+                                        <option value="TODAS">
+                                            TODAS
+                                        </option>
+                                        @foreach (Sucursal _sucursal in sucursales)
+                                        {
+                                            @if (_sucursal.SucursalId == sucursal.SucursalId)
+                                            {
+                                                <option selected value="@_sucursal.SucursalId">@_sucursal.nombreSucursal</option>
+
+                                            }
+                                            else
+                                            {
+                                                <option value="@_sucursal.SucursalId">@_sucursal.nombreSucursal</option>
+
+                                            }
+                                        }
+                                    </select>
+                                </div>
+
+                                <div class="input-group mb-3 col-md-3">
+                                    <div class="input-group-prepend input-group-sm">
+                                        <span class="input-group-text" id="basic-addon1">Usuario</span>
+                                    </div>
+                                    <select class="form-control" @onchange="@(async(ChangeEventArgs e)=> { if (e.Value.ToString() == "TODOS") { user = new UserInfo(); } else { user = users.Where(x => x.id == e.Value.ToString()).First(); }await ListarVentas();  })">
+
+                                        <option value="TODOS">
+                                            TODOS
+                                        </option>
+                                        @foreach (UserInfo _user in users)
+                                        {
+                                            @if (user.id == _user.id)
+                                            {
+                                                <option selected value="@_user.id">@_user.username</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@_user.id">@_user.username</option>
+
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </Authorized>
+                            <NotAuthorized>
+                                <h5 class="col-md-12">
+
+                                    <span class="badge badge-light pl-4">
+                                        <strong>DESDE:</strong>
+                                    </span>
+                                    <span class="badge badge-info text-left">
+                                        @fechaDesde.ToString("dd/MM/yyyy")
+                                    </span>
+
+                                    <span class="badge badge-light pl-4">
+                                        <strong>HASTA:</strong>
+                                    </span>
+                                    <span class="badge badge-info text-left">
+                                        @fechaDesde.ToString("dd/MM/yyyy")
+                                    </span>
+
+                                    <span class="badge badge-light pl-4">
+                                        <strong>Sucursal:</strong>
+                                    </span>
+                                    <span class="badge badge-info text-left">
+                                        @VariablesGlobales.sucursal.nombreSucursal
+                                    </span>
+
+                                    <span class="badge badge-light pl-4">
+                                        <strong>Usuario:</strong>
+                                    </span>
+                                    <span class="badge badge-info text-left">
+                                        @_context2.User.Identity.Name
+                                    </span>
+                                </h5>
+                            </NotAuthorized>
+                        </AuthorizeView>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-outline-secondary">@(criterioBusqueda == String.Empty ? "Nombre" : criterioBusqueda) </button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Codigo")">Codigo</a>
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Razon Social")">Razon Social</a>
+
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" @bind-value="@cadenafiltroBusqueda" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> {  FiltrarVenta(e); })">
+
+
+                        <table class="table table-striped mt-3 table-sm">
+                            <thead class="bg-dark text-white">
+
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Código</th>
+                                    <th>Razon Social</th>
+                                    <th>Sucursal</th>
+                                    <th>Vendedor</th>
+
+                                    <th>Importe</th>
+                                    <th>Acciones</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (ventas.Count > 0)
+                                {
+                                    @foreach (FacturaDto venta in ventasBuscadas)
+                                    {
+                                        <tr>
+                                            <td>@venta.comprobante.fechaAlta</td>
+                                            <td>@venta.comprobante.codigo</td>
+                                            <td>@venta.comprobante.personaJuridica.razonSocial</td>
+                                            <td>@venta.comprobante.sucursal.nombreSucursal</td>
+                                            <td>@venta.comprobante.UserName</td>
+
+                                            <td>$ @venta.comprobante.importe</td>
+
+                                            <td><button class="btn" @onclick="@(async () => { await BuscarVenta(venta.comprobante.codigo); await ModalToggle(); cadenaBusqueda = Convert.ToString(venta.comprobante.codigo); })"><i class="far fa-eye text-primary"></i></button></td>
+                                        </tr>
+                                    }
+
+                                }
+
+                            </tbody>
+                        </table>
+                        <div class="col-md-12 row bg-dark mx-0 alert">
+                            <h6 class="bg-dark text-white col-md-6 pt-2"><strong>TOTAL VENTAS $ @ventasBuscadas.Sum(x => x.comprobante.importe)</strong></h6>
+                            <div class="col-md-6 d-flex justify-content-end">
+                                <button class="btn btn-success ml-4" @onclick="DescargarVentasExcel">
+                                    <i class="fas fa-file-excel mr-2"></i> Descargar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal p-0 fade" id="modalConfirm" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CONFIRMAR</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalConfirmToggle(); })">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-3 m-2" data-spy="scroll">
+                    @*BODY *@
+
+                    <p><strong>¿Desea anular este comprobante? Una vez anulado no podrá volver atrás.</strong></p>
+                    <div class="col-md-12 d-flex justify-content-center mt-4"> <button class="btn btn-success col-md-4" @onclick="@(async () => {await  AnularVenta(); await ModalConfirmToggle(); })">OK</button><button class="btn btn-light ml-2 col-md-4" @onclick="@ModalConfirmToggle">CANCELAR</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</AuthorizeView>
+
+@code {
+    public string cadenaBusqueda { get; set; }
+    public string cadenafiltroBusqueda { get; set; } = String.Empty;
+    public string criterioBusqueda { get; set; } = "Razon Social";
+    public DateTime fechaDesde { get; set; } = DateTime.Now.AddHours(-3).Date;
+    public DateTime fechaHasta { get; set; } = DateTime.Now.AddHours(-3).Date;
+    public Sucursal sucursal { get; set; } = VariablesGlobales.sucursal;
+    public UserInfo user { get; set; }
+    public List<Sucursal> sucursales { get; set; } = new List<Sucursal>();
+    public List<UserInfo> users { get; set; } = new List<UserInfo>();
+    public List<FacturaDto> ventas { get; set; } = new List<FacturaDto>();
+    public List<FacturaDto> ventasBuscadas { get; set; } = new List<FacturaDto>();
+    public FacturaDto venta { get; set; } = new FacturaDto { comprobante = new Comprobante { personaJuridica = new Cliente(), sucursal = new Sucursal() }, detalles = new List<DetalleFactura>() };
+
+    protected override async Task OnInitializedAsync()
+    {
+
+       
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+
+        await ListarUsuarios();
+        await ListarSucursales();
+        user = users.Where(x => x.username == authState.User.Identity.Name).First();
+
+        await ListarVentas();
+
+
+    }
+
+    protected async Task ListarUsuarios()
+    {
+        users = await http.GetJsonAsync<List<UserInfo>>("/api/Cuentas/Usuarios");
+
+    }
+    protected async Task ListarSucursales()
+    {
+        sucursales = await http.GetJsonAsync<List<Sucursal>>("/api/Sucursal/Listar");
+
+
+    }
+    protected async Task ListarVentas()
+    {
+        Console.WriteLine($"/api/Comprobante/ListarVentas/{sucursal.SucursalId}/{user.username}/{fechaDesde.ToString("dd-MM-yyyy")}/{fechaHasta.ToString("dd-MM-yyyy")}");
+        if (user.username == null || user.username == "")
+        {
+            ventas = await http.GetJsonAsync<List<FacturaDto>>($"/api/Comprobante/ListarVentas/{sucursal.SucursalId}/TODOS/{fechaDesde.ToString("dd-MM-yyyy")}/{fechaHasta.ToString("dd-MM-yyyy")}");
+
+        }
+        else
+        {
+            ventas = await http.GetJsonAsync<List<FacturaDto>>($"/api/Comprobante/ListarVentas/{sucursal.SucursalId}/{user.username}/{fechaDesde.ToString("dd-MM-yyyy")}/{fechaHasta.ToString("dd-MM-yyyy")}");
+
+        }
+        if (ventas.Count > 0)
+        {
+            venta = ventas.Last();
+            cadenaBusqueda = Convert.ToString(venta.comprobante.codigo);
+        }
+        else
+        {
+            venta = new FacturaDto { comprobante = new Comprobante { personaJuridica = new Cliente(), sucursal = new Sucursal() }, detalles = new List<DetalleFactura>() };
+            cadenaBusqueda = "";
+
+        }
+        ventasBuscadas = ventas;
+
+    }
+
+    protected async Task AnularVenta()
+    {
+
+        await http.DeleteAsync($"/api/Comprobante/AnularVenta/{venta.comprobante.ComprobanteId}");
+        await ListarVentas();
+        await Alerta("top-end", "info", "Se anulo el comprobante");
+
+    }
+
+    protected async Task BuscarVenta(string codigo)
+    {
+        FacturaDto ventaEncontrada = null;
+        try
+        {
+            ventaEncontrada = ventas.Where(x => x.comprobante.codigo == codigo).First();
+
+        }
+        catch (Exception)
+        {
+
+        }
+
+        if (ventaEncontrada != null)
+        {
+            venta = ventaEncontrada;
+
+        }
+        else
+        {
+            cadenaBusqueda = Convert.ToString(venta.comprobante.codigo);
+            await Alerta("top-end", "error", "Venta inexistente");
+
+        }
+
+    }
+
+
+
+
+    protected void FiltrarVenta(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (cadenafiltroBusqueda != "" && cadenafiltroBusqueda != string.Empty)
+            {
+                try
+                {
+                    if (criterioBusqueda == "Codigo")
+                    {
+                        ventasBuscadas = ventas.Where(x => x.comprobante.codigo.ToString().ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+                    if (criterioBusqueda == "Cliente")
+                    {
+                        ventasBuscadas = ventas.Where(x => x.comprobante.personaJuridica.razonSocial.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+
+                }
+                catch (Exception)
+                {
+
+
+                }
+
+            }
+            else { ventasBuscadas = ventas; }
+        }
+    }
+
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el producto con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+    public async Task ModalToggle()
+    {
+        await js.InvokeAsync<object>("ModalToggle");
+    }
+
+    public async Task ModalConfirmToggle()
+    {
+        await js.InvokeAsync<object>("ModalConfirmToggle");
+    }
+
+
+    protected async void DescargarVentasExcel()
+    {
+
+        using (var package = new ExcelPackage())
+        {
+            var worksheet = package.Workbook.Worksheets.Add($"Ventas");
+
+            // Use LINQ to project data into the worksheet
+            worksheet.DefaultColWidth = 24;
+            worksheet.DefaultRowHeight = 13.2;
+            worksheet.Cells["A1:T40"].Style.Fill.PatternType = ExcelFillStyle.Solid;
+            worksheet.Cells["A1:T40"].Style.Fill.BackgroundColor.SetColor(Color.White);
+            var tableBody = worksheet.Cells["B4:G4"].LoadFromCollection(
+            from v in ventasBuscadas.OrderBy(x => x.comprobante.sucursal.nombreSucursal).ThenBy(x => x.comprobante.fechaAlta)
+            select new { v.comprobante.sucursal.nombreSucursal, v.comprobante.UserName, v.comprobante.codigo, v.comprobante.fechaAlta, v.comprobante.personaJuridica.razonSocial, v.comprobante.importe }, true);
+
+            tableBody.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            tableBody.Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            tableBody.Style.Fill.PatternType = ExcelFillStyle.Solid;
+            tableBody.Style.Fill.BackgroundColor.SetColor(Color.White);
+            tableBody.Style.Font.Color.SetColor(Color.Black);
+            tableBody.Style.Border.BorderAround(ExcelBorderStyle.Dashed);
+
+            worksheet.DefaultColWidth = 24;
+            worksheet.DefaultRowHeight = 13.2;
+            var encabezado = worksheet.Cells[1, 2, 2, 6];
+
+
+            encabezado.Style.Font.Bold = true;
+            encabezado.Merge = true;
+            encabezado.Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
+            encabezado.Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            encabezado.Style.Font.Size = 14;
+            encabezado.Value = "INFORME DE VENTAS";
+
+
+
+            //worksheet.Cells[4, 6, tableBody.Rows + 3, 6].Formula = $"C5*D5-E5";
+            //worksheet.Calculate();
+
+            // Formatting
+            var titulopro = worksheet.Cells["B3:F3"];
+            worksheet.Row(3).Height = 30;
+            titulopro.Merge = true;
+            titulopro.Value = $"Desde:{fechaDesde.ToString("dd/MM/yyyy")} Hasta:{fechaHasta.ToString("dd/MM/yyyy")} - Sucursal: {sucursal.nombreSucursal} - Vendedor:{user.username}";
+            titulopro.Style.Fill.PatternType = ExcelFillStyle.Solid;
+            titulopro.Style.Fill.BackgroundColor.SetColor(Color.White);
+            titulopro.Style.Font.Color.SetColor(Color.Black);
+            titulopro.Style.Font.Bold = false;
+            titulopro.Style.Font.Size = 14;
+
+            var header = worksheet.Cells["B4:G4"];
+            worksheet.Cells["B4"].Value = "SUCURSAL";
+            worksheet.Cells["C4"].Value = "VENDEDOR";
+            worksheet.Cells["D4"].Value = "CODIGO";
+            worksheet.Cells["E4"].Value = "FECHA";
+            worksheet.Cells["F4"].Value = "CLIENTE";
+            worksheet.Column(5).Style.Numberformat.Format = "dd-mm-yyyy HH:mm";
+            worksheet.Column(7).Style.Numberformat.Format = "$#,##0.00";
+
+            var total = worksheet.Cells[$"G{5 + ventasBuscadas.Count()}"];
+
+            total.Value = ventasBuscadas.Sum(x => x.comprobante.importe);
+            total.Style.Fill.BackgroundColor.SetColor(Color.AliceBlue);
+            total.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            total.Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            total.Style.Fill.PatternType = ExcelFillStyle.Solid;
+            total.Style.Border.BorderAround(ExcelBorderStyle.Medium);
+
+            header.Style.Font.Bold = true;
+            header.Style.Font.Color.SetColor(Color.Black);
+            header.Style.Font.Bold = true;
+
+            header.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            header.Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            header.Style.Fill.PatternType = ExcelFillStyle.Solid;
+            header.Style.Fill.BackgroundColor.SetColor(Color.AliceBlue);
+            header.Style.Border.BorderAround(ExcelBorderStyle.Medium);
+
+
+
+
+
+            await js.InvokeAsync<object>("saveAsFile", $"Informe de Ventas.xlsx", package.GetAsByteArray());
+
+        }
+
+    }
+}
+
+

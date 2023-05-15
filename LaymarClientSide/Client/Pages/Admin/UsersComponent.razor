@@ -1,0 +1,367 @@
+﻿@inject HttpClient http
+@inject NavigationManager uriHelper
+@inject ILoginService loginService
+@using LaymarClientSide.Client.Auth
+@attribute [Authorize(Roles = "Admin")]
+@using LaymarClientSide.Shared.Entidades
+@inject IJSRuntime js
+@page "/users"
+<h2 class="mt-2">
+    <strong>
+        <span class="badge badge-light">
+            <strong>USUARIOS <span class="badge badge-info ml-2">@users.Count</span></strong>
+        </span>
+    </strong>
+</h2>
+<div class="col-md-12 mx-0 row my-2">
+    <button class="btn btn-success" @onclick="@(async ()=> { AcccionSobreUsuario = "Crear"; userInfo = new UserInfo(); await ModalToggle(); })">Nuevo Usuario</button>
+</div>
+<div class="row col-md-12 mx-0">
+    @if (users.Count > 0)
+    {
+        <table class="table table-sm table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <td>Usuario</td>
+                    <td>Email</td>
+                    <td>Roles</td>
+                    <td>Sucursales</td>
+
+
+
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (UserInfo user in users)
+                {
+
+                    <tr>
+                        <td><h5><strong class="badge badge-light">@user.username </strong></h5></td>
+                        <td>@user.Email</td>
+                        <td>
+                            @if (user.roles.Count > 0)
+                            {
+                                <h5>
+                                    @foreach (Roles rol in user.roles)
+                                    {
+                                        <span class="badge badge-info mr-1">@rol.rol </span>
+
+                                    }
+                                </h5>
+                            }
+                        </td>
+                        <td>
+                            @if (user.sucursales.Count > 0)
+                            {
+                                <h5>
+                                    @foreach (Sucursal sucursal in user.sucursales)
+                                    {
+                                        <span class="badge badge-light mr-1">@sucursal.nombreSucursal </span>
+
+                                    }
+                                </h5>
+                            }
+                        </td>
+                        <td>
+                            <button class="btn text-warning btn-sm  mb-3 mr-2 text-white border border-solid rounded " title="Editar" @onclick="@(async () => { AcccionSobreUsuario = "Editar"; userInfo = user; await ModalToggle(); })"><i class="fas fa-edit"></i></button>
+                            <button class="btn text-danger  mb-3 btn-sm border border-solid rounded" title="Cambiar Clave" @onclick="@(async () => { AcccionSobreUsuario = "Cambiar Contraseña"; userInfo = user; await ModalToggle(); })"><i class="fas fa-key text-dark"></i></button> @*Boton Anular*@
+                            <button class="btn text-danger  mb-3 btn-sm border border-solid rounded" title="Eliminar" @onclick="@(async () =>{userInfo = user; await ModalConfirmToggle(); })"><i class="far fa-trash-alt text-danger"></i></button> @*Boton Anular*@
+
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+
+</div>
+
+@*MODAL*@
+<div class="modal p-0 fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title"><strong class="text-white">@AcccionSobreUsuario usuario</strong></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalToggle();  })">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0 m-0" data-spy="scroll">
+                @*BODY *@
+                @if (AcccionSobreUsuario == "Cambiar Contraseña")
+                {
+                    <div class="col-md-12 d-flex justify-content-center p-3">
+                        <div class="form-field col-md-5">
+                            <label class="badge badge-light"><strong>Nueva Contraseña:</strong></label>
+                            <div>
+                                <input type="password" Class="form-control" @bind="@userInfo.Password" />
+                            </div>
+                            <div><strong class="text-danger">La contraseña debe tener al menos 8 caracteres + 1 caracter especial + 1 mayúscula + 1 numero.</strong></div>
+                            <div class="col-md-12 row mx-0 px-0"><button class="btn btn-success col-md-12 mt-2" @onclick="@(async ()=> {await CambiarContraseña(); })">Cambiar Contraseña</button></div>
+
+                        </div>
+                    </div>
+                }
+                else
+                {
+
+                    <EditForm Model="userInfo" OnValidSubmit="@(async ()=> { if (AcccionSobreUsuario == "Crear") { await CrearUsuario(); } else { await EditarUsuario(); } })">
+                        <DataAnnotationsValidator />
+                        <fieldset>
+                            <div class="form-field">
+                                <label>Username:</label>
+                                <div>
+                                    <InputText Class="form-control" @bind-Value="@userInfo.username" />
+                                    <ValidationMessage For="@(() => userInfo.username)" />
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label>Email:</label>
+                                <div>
+                                    <InputText Class="form-control" @bind-Value="@userInfo.Email" />
+                                    <ValidationMessage For="@(() => userInfo.Email)" />
+                                </div>
+                            </div>
+                            @if (AcccionSobreUsuario == "Crear")
+                            {
+
+                                <div class="form-field">
+                                    <label>Contraseña:</label>
+                                    <div>
+                                        <InputPassword Class="form-control" @bind-Value="@userInfo.Password" />
+                                        <ValidationMessage For="@(() => userInfo.Password)" />
+                                    </div>
+                                    <div><strong class="text-danger">La contraseña debe tener al menos 8 caracteres + 1 caracter especial + 1 mayúscula + 1 numero.</strong></div>
+                                </div>
+                            }
+
+
+
+                            @*ROLES DE USUARIO*@
+
+
+                            <div class="bg-dark text-white mt-4 p-2 alert">ROLES</div>
+                            <div class="col-md-12 row mx-0 px-0">
+                                <div class="col-md-6 mx-0 px-0 border border-solid">
+                                    <h5 class="col-md-12 badge badge-light border border-solid"><strong>DISPONIBLES</strong></h5>
+                                    @foreach (Roles r in roles)
+                                    {
+                                        @if (userInfo.roles.Where(x => x.rol == r.rol).ToList().Count > 0)
+                                        {
+
+                                        }
+                                        else
+                                        {
+                                            <h5 class="col-md-12"><span class="badge badge-info">@r.rol <span class="badge badge-secondary ml-2 btn" @onclick="@(()=> AgregarRol(r))"><i class="fas fa-plus-circle"></i></span></span></h5>
+                                        }
+                                    }
+                                </div>
+                                <div class="col-md-6 mx-0 px-0 border border-solid">
+                                    <h5 class="col-md-12 badge badge-light border border-solid"><strong>HABILITADOS</strong></h5>
+                                    <h5 class="col-md-12 ">
+                                        @foreach (Roles r in userInfo.roles)
+                                        {
+
+                                            <span class="badge badge-info">@r.rol <span class="badge badge-secondary ml-2 btn" @onclick="@(()=> AgregarRol(r))"><i class="fas fa-times"></i></span></span>
+                                        }
+                                    </h5>
+                                </div>
+                            </div>
+
+                            @*SUCURSAES*@
+
+                            <div class="bg-dark text-white mt-4 p-2 alert">SUCURSALES</div>
+                            <div class="col-md-12 row mx-0 px-0">
+                                <div class="col-md-6 mx-0 px-0 border border-solid">
+                                    <h5 class="col-md-12 badge badge-light border border-solid"><strong>DISPONIBLES</strong></h5>
+                                    @foreach (Sucursal sucursal in sucursales)
+                                    {
+                                        @if (userInfo.sucursales.Where(x => x.SucursalId == sucursal.SucursalId).ToList().Count > 0)
+                                        {
+
+                                        }
+                                        else
+                                        {
+                                            <h5 class="col-md-12"><span class="badge badge-info">@sucursal.nombreSucursal <span class="badge badge-secondary ml-2 btn" @onclick="@(()=> AgregarSucursal(sucursal, false))"><i class="fas fa-plus-circle"></i></span></span></h5>
+                                        }
+                                    }
+                                </div>
+                                <div class="col-md-6 mx-0 px-0 border border-solid">
+                                    <h5 class="col-md-12 badge badge-light border border-solid"><strong>HABILITADAS</strong></h5>
+                                    <h5 class="col-md-12 ">
+                                        @foreach (Sucursal sucursal in userInfo.sucursales)
+                                        {
+
+                                            <span class="badge badge-info">@sucursal.nombreSucursal <span class="badge badge-secondary ml-2 btn" @onclick="@(()=> AgregarSucursal(sucursal, true))"><i class="fas fa-times"></i></span></span>
+                                        }
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-12 row my-2 mx-0 px-0 my-4"><button type="submit" class="btn btn-success col-md-12">GUARDAR</button></div>
+                        </fieldset>
+                    </EditForm>
+                }
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal p-0 fade" id="modalConfirm" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CONFIRMAR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalConfirmToggle(); })">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-3 m-2" data-spy="scroll">
+                @*BODY *@
+
+                <p><strong>¿Desea eliminar este usuario? Una vez anulado no podrá volver atrás.</strong></p>
+                <div class="col-md-12 d-flex justify-content-center mt-4"> <button class="btn btn-success col-md-4" @onclick="@(async () => {await  EliminarUsuario(); await ModalConfirmToggle(); })">OK</button><button class="btn btn-light ml-2 col-md-4" @onclick="@ModalConfirmToggle">CANCELAR</button></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@code {
+    public string AcccionSobreUsuario { get; set; } = String.Empty;
+    public List<UserInfo> users { get; set; } = new List<UserInfo>();
+    public List<Roles> rolesseleccionados { get; set; } = new List<Roles>();
+    public List<Roles> roles { get; set; } = new List<Roles>();
+    public List<Sucursal> sucursales { get; set; } = new List<Sucursal>();
+    public List<Sucursal> sucursalesSeleccionadas { get; set; } = new List<Sucursal>();
+
+    private UserInfo userInfo = new UserInfo();
+    protected async Task ListarUsuarios()
+    {
+        users = await http.GetJsonAsync<List<UserInfo>>("/api/Cuentas/Usuarios");
+
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        await ListarUsuarios();
+        roles = await http.GetJsonAsync<List<Roles>>("api/Cuentas/Roles");
+        sucursales = await http.GetJsonAsync<List<Sucursal>>("api/Sucursal/Listar");
+    }
+
+    private async Task CrearUsuario()
+    {
+
+        Console.WriteLine(userInfo);
+        var result = await http.PostJsonAsync<UserToken>("api/cuentas/crear", userInfo);
+        await ListarUsuarios();
+        AcccionSobreUsuario = "";
+        await ModalToggle();
+        await Alerta("top-end", "success", "Se creó el usuario correctamente");
+
+
+    }
+
+    public void AgregarRol(Roles rol)
+    {
+
+        if (userInfo.roles.Where(x => x.rol.Contains(rol.rol)).ToList().Count > 0)
+        {
+            userInfo.roles.Remove(userInfo.roles.Where(x => x.rol == rol.rol).First());
+            Console.WriteLine($"se quito el rol {rol}");
+            foreach (var r in userInfo.roles)
+            {
+                Console.WriteLine(r.rol);
+            }
+        }
+        else
+        {
+            userInfo.roles.Add(rol);
+            Console.WriteLine($"se agrego el rol {rol}");
+            foreach (var r in userInfo.roles)
+            {
+                Console.WriteLine(r.rol);
+            }
+        }
+
+
+    }
+
+
+    public void AgregarSucursal(Sucursal sucursal, bool bandera)
+    {
+
+        if (bandera)
+        {
+            userInfo.sucursales.Remove(userInfo.sucursales.Where(x => x.SucursalId == sucursal.SucursalId).First());
+            Console.WriteLine($"se quito la sucursal {sucursal.nombreSucursal}");
+            foreach (Sucursal _sucursal in userInfo.sucursales)
+            {
+                Console.WriteLine(_sucursal.nombreSucursal);
+            }
+        }
+        else
+        {
+            userInfo.sucursales.Add(sucursal);
+            Console.WriteLine($"se agregó la sucursal {sucursal.nombreSucursal}");
+            foreach (Sucursal _sucursal in userInfo.sucursales)
+            {
+                Console.WriteLine(_sucursal.nombreSucursal);
+            }
+        }
+
+        this.StateHasChanged();
+    }
+
+    protected async Task EditarUsuario()
+    {
+
+        await http.PutJsonAsync<UserInfo>($"/api/Cuentas/Editar/{userInfo.id}", userInfo);
+        await ListarUsuarios();
+        AcccionSobreUsuario = "";
+        await ModalToggle();
+        await Alerta("top-end", "info", "Se editó el usuario correctamente");
+    }
+
+    protected async Task Login(UserInfo user)
+    {
+
+        var result = await http.PostJsonAsync<UserToken>("api/cuentas/login", user);
+        await loginService.Login(result.Token);
+        uriHelper.NavigateTo("");
+
+    }
+    protected async Task CambiarContraseña()
+    {
+        await http.PostJsonAsync("api/cuentas/CambiarContraseña", userInfo);
+        await Alerta("top-end", "success", "Se cambio la contraseña del usuario correctamente");
+        AcccionSobreUsuario = "";
+
+    }
+    protected async Task EliminarUsuario()
+    {
+
+        await http.DeleteAsync($"api/cuentas/EliminarUsuario/{userInfo.id}");
+        await Alerta("top-end", "info", "Se elimino");
+        await ListarUsuarios();
+        await ModalConfirmToggle();
+
+    }
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el producto con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+    public async Task ModalToggle()
+    {
+        await js.InvokeAsync<object>("ModalToggle");
+    }
+    public async Task ModalConfirmToggle()
+    {
+        await js.InvokeAsync<object>("ModalConfirmToggle");
+    }
+}

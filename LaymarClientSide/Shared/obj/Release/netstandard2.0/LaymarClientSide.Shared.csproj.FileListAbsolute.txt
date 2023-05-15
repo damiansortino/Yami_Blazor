@@ -1,0 +1,73 @@
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.AssemblyReference.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb

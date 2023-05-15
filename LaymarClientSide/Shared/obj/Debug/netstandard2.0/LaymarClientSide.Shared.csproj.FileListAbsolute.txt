@@ -1,0 +1,46 @@
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\agust\Google Drive\Programacion\Proyectos\Sistema de Ventas Laymar\Laymar Vigente\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.deps.json
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.deps.json
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\bin\Debug\netstandard2.0\LaymarClientSide.Shared.pdb
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csproj.AssemblyReference.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Debug\netstandard2.0\LaymarClientSide.Shared.pdb

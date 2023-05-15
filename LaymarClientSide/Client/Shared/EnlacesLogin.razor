@@ -1,0 +1,65 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@inject NavigationManager uriHelper
+@inject HttpClient http
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@using System.Timers;
+@inject NavigationManager uriHelper
+<AuthorizeView>
+    <Authorized>
+
+        <span class="item ">
+            Hola, <span class="badge badge-pill badge-primary"> @context.User.Identity.Name</span>
+        </span>
+
+        <span class="badge badge-pill badge-dark mx-2">
+            @nombreSucursal
+        </span>
+
+
+
+
+        <a href="Logout" class="ui labeled button" tabindex="0">
+
+            <div class="btn btn-danger">
+                <i class="fas fa-sign-out-alt"></i>
+                Salir
+            </div>
+
+        </a>
+    </Authorized>
+    <NotAuthorized>
+
+        <a href="Login" class="item">Ingresar</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code{
+    Timer timer;
+
+    public string nombreSucursal { get; set; }
+    public UserEntradas ultimaEntrada { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User.Identity.Name;
+
+        if (authState.User.Identity.IsAuthenticated)
+        {
+
+            ultimaEntrada = await http.GetJsonAsync<UserEntradas>($"api/Cuentas/ultimaEntrada/{user}");
+            VariablesGlobales.sucursal = ultimaEntrada.sucursal;
+            this.StateHasChanged();
+            nombreSucursal = ultimaEntrada.sucursal.nombreSucursal;
+
+        }
+
+    }
+
+
+}
+

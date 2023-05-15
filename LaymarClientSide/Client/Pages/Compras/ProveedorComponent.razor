@@ -1,0 +1,455 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@inject HttpClient http
+@page  "/proveedor"
+@inject IJSRuntime js
+@attribute [Authorize(Roles = "Compras, Admin")]
+
+
+<h2 class="mt-2">
+    <strong>
+        <span class="badge badge-light">
+            <strong>PROVEEDORES</strong>
+        </span>
+    </strong>
+</h2>
+
+<div class="botonera row col-md-12 mx-0 border bg-light border-solid rounded pt-2">
+    @*Boton Crear*@
+    <button class="btn text-primary btn-sm  mb-3 mr-2 border border-solid rounded" title="Crear" @onclick="@(async () => { await CrearProveedor(); await HabilitarFormulario(); })"><i class="fas fa-plus-circle"></i></button>
+    @* Boton Editar*@
+    @if (valido)
+    {
+        <button class="btn text-warning btn-sm  mb-3 mr-2 text-white border border-solid rounded " title="Editar" @onclick="@(async () => { AccionSobreProveedor = "Editar"; await HabilitarFormulario(); })"><i class="fas fa-edit"></i></button>
+    }
+    else
+    {
+        <button class="btn text-warning btn-sm  mb-3 mr-2 text-white border border-solid rounded disbled" disabled title="Editar" @onclick="@(async () => { AccionSobreProveedor = "Editar"; await HabilitarFormulario(); })"><i class="fas fa-edit"></i></button>
+
+    }
+    @*Boton Anular*@
+    @if (valido)
+    {
+        <button class="btn text-danger  mb-3 btn-sm border border-solid rounded" title="Anular" @onclick="@(async () => { await ModalConfirmToggle(); })"><i class="fas fa-ban"></i></button> @*Boton Anular*@
+
+    }
+    else
+    {
+        <button class="btn text-danger  mb-3 btn-sm border border-solid rounded disabled" disabled title="Anular" @onclick="@(async () => { await ModalConfirmToggle(); })"><i class="fas fa-ban"></i></button> @*Boton Anular*@
+
+    }
+
+    @*texto Buscar*@
+
+    <div class="input-group mb-3 col-md-3">
+        <div class="input-group-prepend input-group-sm" @onclick="@( async () => { await BuscarProveedor(cadenaBusqueda); await DeshabilitarFormulario(); })">
+            <span class="input-group-text" id="basic-addon1">Código</span>
+        </div>
+        <input type="text" class="form-control" @bind-value="@cadenaBusqueda" @bind-value:event="oninput" @onkeypress="@(async (KeyboardEventArgs e) => { if (e.Key == "Enter") { await BuscarProveedor(cadenaBusqueda); } })" />
+
+
+    </div>
+    @*Boton buscar*@
+    <button class="btn text-primary  mb-3 btn-sm border mr-2 border-solid rounded" title="Anular" @onclick="(async () => { proveedoresBuscados = proveedores; await ModalToggle(); })"><i class="fas fa-search m-0 p-0"></i></button> @*Boton Anular*@
+
+    @if (proveedores.Count > 0)
+    {
+
+
+        @*Boton Anterior*@
+        @if (proveedores.First() != proveedor)
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2" @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) - 1); await BuscarProveedor(cadenaBusqueda); await DeshabilitarFormulario();})">
+                <i class="fas fa-backward"></i>
+            </button>
+        }
+        else
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2 disabled" disabled @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) - 1); await BuscarProveedor(cadenaBusqueda); })">
+                <i class="fas fa-backward"></i>
+            </button>
+        }
+        @*Boton Siguiente*@
+
+        @if (proveedores.Last() != proveedor)
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2" @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) + 1); await BuscarProveedor(cadenaBusqueda); await DeshabilitarFormulario(); })">
+                <i class="fas fa-forward"></i>
+            </button>
+
+        }
+        else
+        {
+            <button class="btn mb-3 btn-sm border border-solid rounded mr-2 disabled" disabled @onclick="@(async () => { cadenaBusqueda = Convert.ToString(Convert.ToInt32(cadenaBusqueda) + 1); await BuscarProveedor(cadenaBusqueda); await DeshabilitarFormulario(); })">
+                <i class="fas fa-forward"></i>
+            </button>
+        }
+
+    }
+
+
+</div>
+
+@*FORMULARIO*@
+<div class="row col-md-12 mx-0 bg-dark mt-1 rounded"><h4 class="mt-2 text-white py-1"><strong>@AccionSobreProveedor.ToUpper()</strong></h4></div>
+
+<div class="bg-light mt-2">
+    <EditForm Model=@proveedor OnValidSubmit="@GuardarProveedor">
+        <ObjectGraphDataAnnotationsValidator />
+
+        <fieldset id="FieldSetFormulario" disabled class="@(proveedor.fechaBaja != null ? "border border-danger":"border border-solid rounded")">
+            @if (proveedor.fechaBaja != null)
+            {
+                <div class="row col-md-12 mx-0 mt-3"><h5 class="ml-2"><strong class="text-danger">Anulado @proveedor.fechaBaja</strong></h5></div>
+            }
+            <div class="input-group mb-2 col-md-12 mt-2">
+                <div class="col-md-4">
+                    <div class="input-group input-group-sm mb-1 mt-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Código</span>
+                        </div>
+                        <input type="text" class="form-control disabled" disabled @bind-value="@proveedor.ProveedorId">
+
+                    </div>
+
+
+                </div>
+            </div>
+            @*DATOS  DEL PROVEEDOR*@
+            <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>DATOS DEL PROVEEDOR</strong></div>
+
+            <div class="row col-md-12 mx-0">
+
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Razón Social</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@proveedor.razonSocial">
+                    <ValidationMessage For="@(() => proveedor.razonSocial)" />
+
+                </div>
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Cuit</span>
+                    </div>
+                    <input type="text" class="form-control disabled " @bind-value="@proveedor.cuit">
+                </div>
+
+
+
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Nombre Fantasía</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@proveedor.nombreFantasia">
+                </div>
+            </div>
+            @*RENTIBILIDAD*@
+            <div class="row col-md-12 mx-0">
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Porcentaje Rentabilidad</span>
+                    </div>
+                    <input type="number" class="form-control " @bind-value="@proveedor.porcentajeRentabilidad">
+                </div>
+
+            </div>
+            @*DATOS  DE CONTACTO*@
+            <div class="row col-md-12 mx-0 mb-2 border-top border-solid text-primary pt-3"><strong>DATOS DE CONTACTO</strong></div>
+            <div class="row col-md-12 mx-0">
+
+                <div class="input-group input-group-sm mb-3 col-md-6">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Dirección 1</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@proveedor.direccion1">
+                </div>
+
+                <div class="input-group input-group-sm mb-3 col-md-6">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Dirección 2</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@proveedor.direccion2">
+                </div>
+
+                <div class="input-group input-group-sm mb-3 col-md-6">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Telefono 1</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@proveedor.numeroTelefono1">
+                </div>
+
+                <div class="input-group input-group-sm mb-3 col-md-6">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Telefono 2</span>
+                    </div>
+                    <input type="text" class="form-control " @bind-value="@proveedor.numeroTelefono2">
+                </div>
+            </div>
+
+
+        </fieldset>
+        @*Boton Guardar*@
+        <div class="d-flex justify-content-center row col-md-12 mx-0 px-0 mt-2">
+
+            @if (AccionSobreProveedor == "Crear" || AccionSobreProveedor == "Editar")
+            {
+                <button type="submit" class="btn btn-success col-md-12"><i class="fas fa-save mr-1"></i> Guardar</button>
+            }
+            else
+            {
+
+                <button type="submit" class="btn btn-success col-md-12 disabled" disabled><i class="fas fa-save mr-1"></i> Guardar</button>
+
+            }
+        </div>
+
+    </EditForm>
+
+    <div class="modal p-0 fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar Proveedor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalToggle();  })">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-3 m-2" data-spy="scroll">
+                    @*BODY *@
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-outline-secondary">@(criterioBusqueda == String.Empty ? "Razon Social" : criterioBusqueda) </button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Razon Social")">Razon Social</a>
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Codigo")">Codigo</a>
+                                <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Cuit")">Cuit</a>
+
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" @bind-value="@cadenafiltroBusqueda" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> {  FiltrarProveedor(e); })">
+
+                        <div>
+
+                        </div>
+
+                        <table class="table table-striped mt-3 table-sm">
+                            <thead class="bg-dark text-white">
+
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Razón Social</th>
+                                    <th>Cuit</th>
+                                    <th>Accciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (proveedores.Count > 0)
+                                {
+                                    @foreach (Proveedor proveedor in proveedoresBuscados)
+                                    {
+                                        <tr>
+                                            <td>@proveedor.ProveedorId</td>
+                                            <td>@proveedor.razonSocial</td>
+                                            <td>@proveedor.cuit</td>
+                                            <td><button class="btn" @onclick="@(async () => { await BuscarProveedor(proveedor.ProveedorId); await ModalToggle(); cadenaBusqueda = proveedor.ProveedorId; })"><i class="far fa-eye text-primary"></i></button></td>
+                                        </tr>
+                                    }
+
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="modal p-0 fade" id="modalConfirm" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CONFIRMAR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalConfirmToggle(); })">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-3 m-2" data-spy="scroll">
+                @*BODY *@
+
+                <p><strong>¿Desea anular este Proveedor? Una vez anulado no podrá volver atrás.</strong></p>
+                <div class="col-md-12 d-flex justify-content-center mt-4"> <button class="btn btn-success col-md-4" @onclick="@(async () => {await  AnularProveedor(); await ModalConfirmToggle(); })">OK</button><button class="btn btn-light ml-2 col-md-4" @onclick="@ModalConfirmToggle">CANCELAR</button></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@code {
+    public bool valido { get; set; } = true;
+    public string cadenaBusqueda { get; set; }
+    public string cadenafiltroBusqueda { get; set; } = String.Empty;
+    public string criterioBusqueda { get; set; } = "Razon Social";
+
+    public string AccionSobreProveedor { get; set; } = "Detalles";
+    public Proveedor proveedor { get; set; } = new Proveedor();
+    public List<Proveedor> proveedores { get; set; } = new List<Proveedor>();
+    public List<Proveedor> proveedoresBuscados { get; set; } = new List<Proveedor>();
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        await ListarProveedores();
+
+
+    }
+    protected async Task ListarProveedores()
+    {
+        proveedores = await http.GetJsonAsync<List<Proveedor>>("/api/Proveedor/Listar");
+        if (proveedores.Count > 0)
+        {
+            proveedor = proveedores.Last();
+            cadenaBusqueda = proveedor.ProveedorId;
+        }
+        else
+        {
+            proveedor = new Proveedor();
+        }
+    }
+
+    protected async Task BuscarProveedor(string codigo)
+    {
+        Proveedor proveedorEncontrado = null;
+        AccionSobreProveedor = "Detalles";
+        try
+        {
+            proveedorEncontrado = proveedores.Where(x => x.ProveedorId == codigo).First();
+
+        }
+        catch (Exception)
+        {
+
+        }
+
+        if (proveedorEncontrado != null)
+        {
+            proveedor = proveedorEncontrado;
+            if (proveedor.fechaBaja != null)
+            {
+                valido = false;
+            }
+            else { valido = true; }
+        }
+        else
+        {
+            cadenaBusqueda = proveedor.ProveedorId;
+            await Alerta("top-end", "error", "Proveedor inexistente");
+
+        }
+        await DeshabilitarFormulario();
+
+    }
+
+    protected async Task GuardarProveedor()
+    {
+        @if (AccionSobreProveedor == "Crear")
+        {
+            await http.PostJsonAsync("/api/Proveedor/Crear", proveedor);
+            await DeshabilitarFormulario();
+
+            await Alerta("top-end", "success", "Se creó con éxito");
+            cadenaBusqueda = proveedor.ProveedorId;
+
+        }
+        @if (AccionSobreProveedor == "Editar")
+        {
+
+            await http.PutJsonAsync($"/api/Proveedor/Editar/{proveedor.PersonaJuridicaId}", proveedor);
+            await DeshabilitarFormulario();
+            await Alerta("top-end", "success", "Se editó con éxito");
+
+        }
+        AccionSobreProveedor = "Detalle";
+
+        await ListarProveedores();
+    }
+
+    protected async Task CrearProveedor()
+    {
+        AccionSobreProveedor = "Crear";
+        proveedor = new Proveedor();
+        if (proveedores.Count > 0)
+        {
+            proveedor.ProveedorId = Convert.ToString(Convert.ToInt32(proveedores.Last().ProveedorId) + 1);
+
+        }
+        else
+        {
+            proveedor.ProveedorId = "1";
+
+        }
+        valido = false;
+        await HabilitarFormulario();
+
+    }
+    protected async Task AnularProveedor()
+    {
+        await http.DeleteAsync($"/api/Proveedor/Anular/{proveedor.PersonaJuridicaId}");
+        await ListarProveedores();
+    }
+
+    protected void FiltrarProveedor(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (cadenafiltroBusqueda != "" && cadenafiltroBusqueda != string.Empty)
+            {
+                if (criterioBusqueda == "Razon Social")
+                {
+                    proveedoresBuscados = proveedores.Where(x => x.razonSocial.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                }
+                if (criterioBusqueda == "Cuit")
+                {
+                    proveedoresBuscados = proveedores.Where(x => x.cuit.Contains(cadenafiltroBusqueda)).ToList();
+                }
+                if (criterioBusqueda == "Codigo")
+                {
+                    proveedoresBuscados = proveedores.Where(x => x.ProveedorId.Contains(cadenafiltroBusqueda)).ToList();
+                }
+            }
+            else { proveedoresBuscados = proveedores; }
+        }
+    }
+    public async Task HabilitarFormulario()
+    {
+        await js.InvokeAsync<object>("EnabledFieldFormulario");
+    }
+    public async Task DeshabilitarFormulario()
+    {
+        await js.InvokeAsync<object>("DisabledFieldFormulario");
+    }
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el proveedor con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+    public async Task ModalToggle()
+    {
+        await js.InvokeAsync<object>("ModalToggle");
+    }
+    public async Task ModalConfirmToggle()
+    {
+        await js.InvokeAsync<object>("ModalConfirmToggle");
+    }
+}

@@ -1,0 +1,163 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@inject HttpClient http
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Components.Authorization
+
+
+@page  "/stockValorizado"
+
+@inject IJSRuntime js
+
+<h2 class="mt-4">
+    <strong>
+        <span class="badge badge-light">
+            <strong><i class="fas fa-cubes mr-1 text-info" style="font-size:1.3rem;"></i> STOCK VALORIZADO POR SUCURSAL</strong>
+        </span>
+    </strong>
+</h2>
+
+<div class="row col-md-12 mx-0 mt-3">
+    <div class="accordion row col-md-12" id="accordionExample">
+        @foreach (Sucursal sucursal in sucursales)
+        {
+            <div class="card row col-md-12 mx-0 px-0">
+                <div class="card-header py-0 bg-light px-0" id="headingOne">
+                    <button class="btn d-flex align-items-center col-md-12" type="button" data-toggle="collapse" data-target="#sucursal@(sucursal.SucursalId)" aria-expanded="true" aria-controls="collapseOne">
+
+                        <h3 class="mt-2">
+                            <strong>
+                                <span class="badge badge-light">
+                                    <strong>
+                                        @sucursal.nombreSucursal.ToUpper() <i class="fas fa-sort-down ml-4 text-dark"></i>
+                                    </strong>
+                                </span>
+                            </strong>
+                        </h3>
+
+
+                    </button>
+                </div>
+                <div id="sucursal@(sucursal.SucursalId)" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body p-0">
+                        <table class="table table-striped ">
+                            <thead class="bg-dark text-white">
+                                <tr>
+                                    <th>Nombre/Talle/Color/Marca</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio Costo</th>
+                                    <th>% Rentabilidad</th>
+
+                                    <th>Precio Venta</th>
+                                    <th>Total Valorizado</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach (Stock stock in stocks.Where(x => x.SucursalId == sucursal.SucursalId).ToList())
+                                {
+                                    <tr>
+                                        <td>
+                                            <h4>
+                                                <span class="badge badge-light text-center">@stock.producto.nombre</span>
+                                                <span class="badge badge-light text-center">@stock.producto.talle</span>
+
+                                                <span class="badge badge-light text-center"> @stock.producto.color </span>
+                                                <span class="badge badge-light text-center"> @stock.producto.marca </span>
+                                            </h4>
+                                        </td>
+                                        <td>@stock.cantidad</td>
+                                        <td>$ @stock.producto.precioUnitario</td>
+                                        <td>@stock.producto.porcentajeRentabilidad %</td>
+
+                                        <td>$ @(stock.producto.precioUnitario * (stock.producto.porcentajeRentabilidad/100+1))</td>
+                                        <td>$ @((stock.producto.precioUnitario * (stock.producto.porcentajeRentabilidad/100+1)) * stock.cantidad)</td>
+
+                                    </tr>
+
+
+
+
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 alert bg-info text-white row mx-0 py-0">
+                <h3>
+                    <strong>
+                        <span class="badge badge-info my-2">
+                            TOTAL VALORIZADO:
+                            $ @(stocks.Where(x => x.SucursalId == sucursal.SucursalId).ToList().Sum(x => (x.producto.precioUnitario * (x.producto.porcentajeRentabilidad/100 +1 ))* x.cantidad))
+                            <i class="fas fa-money-bill text-success ml-2"></i>
+                        </span>
+                    </strong>
+                </h3>
+            </div>
+        }
+    </div>
+</div>
+<div class="col-md-12 alert bg-dark text-white row mx-0 py-1">
+    <h2>
+        <strong>
+            <span class="badge badge-light mt-2">
+                TOTAL VALORIZADO:
+                $ @(stocks.Sum(x => (x.producto.precioUnitario * (x.producto.porcentajeRentabilidad/100 +1 ))* x.cantidad))
+                <i class="fas fa-money-bill text-success ml-2"></i>
+            </span>
+        </strong>
+    </h2>
+</div>
+
+
+
+
+
+@code {
+    public string cadenaBusqueda { get; set; }
+    public string cadenafiltroBusqueda { get; set; } = String.Empty;
+    public string criterioBusqueda { get; set; } = "Nombre";
+
+    public Producto producto { get; set; } = new Producto();
+    public List<Producto> productos { get; set; } = new List<Producto>();
+    public List<Stock> stocks { get; set; } = new List<Stock>();
+    public List<TipoMovimientoStock> tipoMovimientoStocks { get; set; } = new List<TipoMovimientoStock>();
+    public List<Producto> productosBuscados { get; set; } = new List<Producto>();
+    public List<MovimientoStock> movimientoStocks { get; set; } = new List<MovimientoStock>();
+    public List<Sucursal> sucursales { get; set; } = new List<Sucursal>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        await ListarSucursales();
+        await ListarStocks();
+
+    }
+
+
+    protected async Task ListarStocks()
+    {
+        stocks = await http.GetJsonAsync<List<Stock>>("/api/Stock/Listar");
+
+    }
+    protected async Task ListarSucursales()
+    {
+        sucursales = await http.GetJsonAsync<List<Sucursal>>("/api/Sucursal/Listar");
+
+    }
+
+
+
+
+
+
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el producto con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+}
+

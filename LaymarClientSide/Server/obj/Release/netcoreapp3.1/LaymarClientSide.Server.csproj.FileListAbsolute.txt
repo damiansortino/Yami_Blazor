@@ -1,0 +1,1462 @@
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csprojAssemblyReference.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.Manifest.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.xml
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CoreCompileInputs.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfoInputs.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfo.cs
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.blazor.config
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.exe
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.deps.json
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.json
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.dev.json
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.DataAnnotations.Validation.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Mdb.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Pdb.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Rocks.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.pdb
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.pdb
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.RazorTargetAssemblyInfo.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CopyComplete
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.genruntimeconfig.cache
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\CsvHelper.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\EPPlus.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\agust\source\repos\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.blazor.config
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.exe
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.deps.json
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.json
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.dev.json
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\CsvHelper.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\EPPlus.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.DataAnnotations.Validation.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Mdb.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Pdb.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Rocks.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.pdb
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csprojAssemblyReference.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.Manifest.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.xml
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CoreCompileInputs.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfoInputs.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.RazorTargetAssemblyInfo.cache
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CopyComplete
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\DAMIAN\Desktop\version_03-2020\LaymarClientSide\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.genruntimeconfig.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.blazor.config
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.exe
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.deps.json
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.json
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.dev.json
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\CsvHelper.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\EPPlus.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.DataAnnotations.Validation.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Mdb.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Pdb.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Rocks.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.pdb
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csprojAssemblyReference.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.Manifest.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.xml
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CoreCompileInputs.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfoInputs.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.RazorTargetAssemblyInfo.cache
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CopyComplete
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\DAMIAN\Desktop\laymar_clientside\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.genruntimeconfig.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.blazor.config
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.exe
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.deps.json
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.json
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.dev.json
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\CsvHelper.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\EPPlus.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.DataAnnotations.Validation.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Mdb.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Pdb.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Rocks.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.pdb
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.pdb
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csprojAssemblyReference.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfoInputs.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CoreCompileInputs.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.RazorTargetAssemblyInfo.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CopyComplete
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.Manifest.cache
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.xml
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\DAMIAN\Desktop\LAYMAR_200521\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.genruntimeconfig.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.blazor.config
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.exe
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.deps.json
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.json
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.dev.json
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\CsvHelper.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\EPPlus.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.DataAnnotations.Validation.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Mdb.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Pdb.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Rocks.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.pdb
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.pdb
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csprojAssemblyReference.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfoInputs.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfo.cs
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CoreCompileInputs.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.RazorTargetAssemblyInfo.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CopyComplete
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.Manifest.cache
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.xml
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\BANGHO\Desktop\Laymar_hermana\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.blazor.config
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.exe
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.deps.json
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.json
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\CsvHelper.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\EPPlus.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.DataAnnotations.Validation.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Mdb.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Pdb.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Rocks.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.pdb
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.Manifest.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.xml
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\scopedcss\bundle\LaymarClientSide.Server.styles.css
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.RazorTargetAssemblyInfo.cache
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CopyComplete
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\ASUS\Desktop\DS_SOFTWARE_FINAL_50-10-2020\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.blazor.config
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.exe
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.deps.json
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.json
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\CsvHelper.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\EPPlus.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.DataAnnotations.Validation.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Mdb.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Pdb.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Rocks.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.pdb
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.pdb
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.Manifest.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.xml
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\scopedcss\bundle\LaymarClientSide.Server.styles.css
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.RazorTargetAssemblyInfo.cache
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CopyComplete
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+C:\Users\ASUS\Desktop\ALMA LIBRE_FUENTE\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.genruntimeconfig.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.blazor.config
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\appsettings.json
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.exe
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.deps.json
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.json
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.runtimeconfig.dev.json
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\CsvHelper.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\EPPlus.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.DataAnnotations.Validation.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.NodeServices.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.SpaServices.Extensions.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Mdb.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Pdb.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.Rocks.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.Cecil.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Client.pdb
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\bin\Release\netcoreapp3.1\LaymarClientSide.Shared.pdb
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.AssemblyReference.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfoInputs.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.AssemblyInfo.cs
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CoreCompileInputs.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cs
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.MvcApplicationPartsAssemblyInfo.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.Manifest.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\staticwebassets\LaymarClientSide.Server.StaticWebAssets.xml
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\scopedcss\bundle\LaymarClientSide.Server.styles.css
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.RazorTargetAssemblyInfo.cache
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.csproj.CopyComplete
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.dll
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.pdb
+D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\obj\Release\netcoreapp3.1\LaymarClientSide.Server.genruntimeconfig.cache

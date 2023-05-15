@@ -1,0 +1,18 @@
+﻿@page "/logout"
+@inject ILoginService loginService
+@inject NavigationManager uriHelper
+@using LaymarClientSide.Client.Auth
+
+<text>Deslogueando...</text>
+
+@code {
+    protected async override Task OnInitializedAsync()
+    {
+
+        await loginService.Logout();
+        VariablesGlobales.horas = 0;
+        VariablesGlobales.minutosSesion = 0;
+        VariablesGlobales.sucursal = null;
+        uriHelper.NavigateTo("");
+    }
+}

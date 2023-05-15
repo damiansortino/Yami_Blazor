@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Client\bin\Release\netstandard2.0\publish\</_PublishTargetUrl>
+    <History>True|2023-04-26T23:19:39.8860484Z;</History>
+  </PropertyGroup>
+</Project>

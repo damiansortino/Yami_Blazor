@@ -1,0 +1,297 @@
+﻿@using LaymarClientSide.Shared.Entidades
+@attribute [Authorize(Roles = "Admin, Configuracion")]
+@inject HttpClient http
+@page  "/AumentoDePrecios"
+@inject IJSRuntime js
+
+
+
+<h2 class="mt-2">
+    <strong>
+        <span class="badge badge-light">
+            <strong>AUMENTO DE PRECIOS</strong>
+        </span>
+    </strong>
+</h2><div class="input-group mb-2 col-md-6 mt-2 px-0">
+    <div class="input-group input-group-sm mb-1 mt-1">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Aumento porcentual de rentabilidad</span>
+        </div>
+        <input type="number" step="0.01" class="form-control " @bind-value="@aumentoPorcentualRentabilidad" />
+    </div>
+</div>
+
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button type="button" class="btn btn-outline-secondary">@(criterioBusqueda == String.Empty ? "Nombre" : criterioBusqueda) </button>
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Codigo")">Codigo</a>
+            <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Nombre")">Nombre</a>
+            <a class="dropdown-item" @onclick="@(() => criterioBusqueda = "Proveedor")">Proveedor</a>
+
+
+        </div>
+    </div>
+    <input type="text" class="form-control" @bind-value="@cadenafiltroBusqueda" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e) => { FiltrarProducto(e); })">
+
+</div>
+
+<table class="table table-sm">
+    <thead>
+        <tr class="bg-dark text-white">
+            <th>Código</th>
+            <th>Nombre/Talle/Color/Marca</th>
+            <th>Proveedor</th>
+            <th>P. Costo</th>
+            <th>% Rentabilidad</th>
+            <th>P. Venta</th>
+            <th>Acciones</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @foreach (Producto producto in productosFiltrados)
+        {
+
+            <tr>
+                <td>@producto.ProductoId</td>
+                <td>
+                    <h5 class="mt-1">
+
+                        <span class="badge badge-light text-center">@producto.nombre</span>
+                        <span class="badge badge-light text-center">@producto.talle</span>
+
+                        <span class="badge badge-light text-center"> @producto.color </span>
+                        <span class="badge badge-light text-center"> @producto.marca </span>
+                    </h5>
+                </td>
+                <td>
+                    <span class="badge badge-light text-center"> @producto.proveedor.razonSocial </span>
+                </td>
+                <td><input type="number" class="form-control col-md-8" style="height:1.5rem" step="0.01" @bind-value="@producto.precioUnitario"></td>
+                <td>
+                    <h5>
+                        <span class="badge badge-light ">@(producto.porcentajeRentabilidad) %</span>
+                        @if (aumentoPorcentualRentabilidad != 0 && aumentoPorcentualRentabilidad != 0.00)
+                        {
+                            <i class="fas fa-arrow-right mx-2"></i> <span class="badge badge-info mr-2">@(producto.porcentajeRentabilidad + aumentoPorcentualRentabilidad) %</span>
+
+                        }
+                    </h5>
+                </td>
+                <td>
+                    <h5>
+                        <span class="badge badge-light ">$ @(producto.precioUnitario * (producto.porcentajeRentabilidad / 100 + 1))</span>
+                        @if (aumentoPorcentualRentabilidad != 0 && aumentoPorcentualRentabilidad != 0.00)
+                        {
+                            <i class="fas fa-arrow-right mx-2"></i><span class="badge badge-info mr-2">$ @(producto.precioUnitario * ((producto.porcentajeRentabilidad + aumentoPorcentualRentabilidad) / 100 + 1))</span>
+                        }
+                    </h5>
+                </td>
+                <th>
+                    <button class="btn text-danger  border border-solid rounded" title="Eliminar" @onclick="(() => productosFiltrados.Remove(producto))"><i class="far fa-trash-alt text-danger"></i></button>
+                </th>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="col-md-12 mx-0 row">
+
+    <button class="btn btn-success col-md-12 mx-0 row" @onclick="@ModalConfirmToggle">Guardar modificaciones</button>
+</div>
+<div class="col-md-12 d-flex justify-content-end mt-3">
+    <button class="btn btn-info" @onclick="DescargarListaPrecios"> <i class="fas fa-file-excel mr-2"></i>  Descargar Lista Precios</button>
+</div>
+
+<div class="modal p-0 fade" id="modalConfirm" data-backdrop="static" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CONFIRMAR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(async () => { await ModalConfirmToggle(); })">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-3 m-2" data-spy="scroll">
+                @*BODY *@
+
+                <p><strong>¿Desea guardar las modicaciones?</strong></p>
+                <div class="col-md-12 d-flex justify-content-center mt-4"> <button class="btn btn-success col-md-4" @onclick="@(async () => {await EditarPrecios(); await ModalConfirmToggle(); })">OK</button><button class="btn btn-light ml-2 col-md-4" @onclick="@ModalConfirmToggle">CANCELAR</button></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    List<Producto> productos = new List<Producto>();
+    List<Producto> productosFiltrados = new List<Producto>();
+    public string criterioBusqueda { get; set; } = "Nombre";
+    public string cadenafiltroBusqueda { get; set; } = String.Empty;
+    public double aumentoPorcentualRentabilidad { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        await ListarProductos();
+    }
+    protected async Task ListarProductos()
+    {
+
+        productos = await http.GetJsonAsync<List<Producto>>("/api/Producto/Listar");
+        productosFiltrados = productos;
+
+    }
+
+    protected void FiltrarProducto(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (cadenafiltroBusqueda != "" && cadenafiltroBusqueda != string.Empty)
+            {
+                try
+                {
+                    if (criterioBusqueda == "Codigo")
+                    {
+                        productosFiltrados = productos.Where(x => x.ProductoId.ToString().ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+                    if (criterioBusqueda == "Nombre")
+                    {
+                        productosFiltrados = productos.Where(x => x.nombre.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+                    if (criterioBusqueda == "Marca")
+                    {
+                        productosFiltrados = productos.Where(x => x.marca.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+                    if (criterioBusqueda == "Proveedor")
+                    {
+                        productosFiltrados = productos.Where(x => x.proveedor.razonSocial.ToLower().Contains(cadenafiltroBusqueda.ToLower())).ToList();
+                    }
+
+                }
+                catch (Exception)
+                {
+
+
+                }
+
+            }
+            else { productosFiltrados = productos; }
+        }
+    }
+
+    protected async Task EditarPrecios()
+    {
+
+        foreach (Producto producto in productosFiltrados)
+        {
+
+            producto.porcentajeRentabilidad += aumentoPorcentualRentabilidad;
+
+        }
+
+        await http.PostJsonAsync("api/Producto/EditarPrecios", productosFiltrados);
+        await ListarProductos();
+        aumentoPorcentualRentabilidad = 0.00;
+        cadenafiltroBusqueda = String.Empty;
+        await Alerta("top-end", "success", "Se realizaron las modificaciones con éxito");
+    }
+
+    public async Task Alerta(string posicion = "top-end", string icono = "success", string mensaje = "Se creó el comprobante con éxito")
+    {
+        await js.InvokeAsync<object>("alerta", posicion, icono, mensaje);
+    }
+
+    public async Task ModalConfirmToggle()
+    {
+        await js.InvokeAsync<object>("ModalConfirmToggle");
+    }
+
+
+    protected async void DescargarListaPrecios()
+    {
+
+        using (var package = new ExcelPackage())
+        {
+            var worksheet = package.Workbook.Worksheets.Add($"LISTA DE PRECIOS");
+
+            // Use LINQ to project data into the worksheet
+            worksheet.DefaultColWidth = 24;
+            worksheet.DefaultRowHeight = 13.2;
+           
+            worksheet.Cells["A1:J100"].Style.Fill.PatternType = ExcelFillStyle.Solid;
+            worksheet.Cells["A1:J100"].Style.Fill.BackgroundColor.SetColor(Color.White);
+        
+
+            var encabezado = worksheet.Cells[1, 1, 2, 6];
+            encabezado.Style.Font.Bold = true;
+            encabezado.Merge = true;
+            encabezado.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            encabezado.Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            encabezado.Style.Font.Size = 18;
+            encabezado.Value = $"LISTA DE PRECIOS - {DateTime.Now.AddHours(-3)}";
+
+            var tableBody = worksheet.Cells[$"A4:F{4 + productosFiltrados.Count}"];
+            tableBody.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            tableBody.Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            tableBody.Style.Fill.PatternType = ExcelFillStyle.Solid;
+            tableBody.Style.Fill.BackgroundColor.SetColor(Color.White);
+            tableBody.Style.Font.Color.SetColor(Color.Black);
+
+
+
+            var header = worksheet.Cells["A4:F4"];
+            worksheet.Cells["A4"].Value = "CODIGO";
+            worksheet.Cells["B4"].Value = "NOMBRE";
+            worksheet.Cells["C4"].Value = "TALLE";
+            worksheet.Cells["D4"].Value = "MARCA";
+            worksheet.Cells["E4"].Value = "PROVEEDOR";
+            worksheet.Cells["F4"].Value = "PRECIO VENTA";
+            header.Style.Font.Bold = true;
+            header.Style.Font.Color.SetColor(Color.Black);
+            header.Style.Font.Bold = true;
+            header.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            header.Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+            header.Style.Fill.PatternType = ExcelFillStyle.Solid;
+            header.Style.Fill.BackgroundColor.SetColor(Color.AliceBlue);
+
+
+            for (int i = 0; i < productosFiltrados.Count; i++)
+
+            {
+                worksheet.Cells[$"A{5 + i}"].Value = productosFiltrados[i].codigo;
+                worksheet.Cells[$"B{5 + i}"].Value = productosFiltrados[i].nombre;
+                worksheet.Cells[$"C{5 + i}"].Value = productosFiltrados[i].talle;
+                worksheet.Cells[$"D{5 + i}"].Value = productosFiltrados[i].marca;
+                worksheet.Cells[$"E{5 + i}"].Value = productosFiltrados[i].proveedor.razonSocial;
+                worksheet.Cells[$"F{5 + i}"].Value = productosFiltrados[i].precioUnitario * (productosFiltrados[i].porcentajeRentabilidad / 100 + 1);
+
+            }
+
+
+
+
+            worksheet.Column(6).Style.Numberformat.Format = "$#,##0.00";
+            worksheet.Column(7).Style.Numberformat.Format = "0.00%";
+            worksheet.Column(8).Style.Font.Size = 24;
+
+
+
+
+            await js.InvokeAsync<object>("saveAsFile", $"Lista de precios.xlsx", package.GetAsByteArray());
+
+        }
+
+    }
+}
+
+
