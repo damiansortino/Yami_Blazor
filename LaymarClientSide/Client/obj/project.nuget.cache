@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DX+ohytwQjBhHS11SSoVop3Os5SocutCb3N6ypSVYVKPTgX5q2e+V1uOQdN3JzDTqKJl+PnXFzQM6XW6iV4mlQ==",
+  "dgSpecHash": "iCuU3V82EUYbYTJkCducNeoUHZYYJvciOrfNG0E5k2GQBQR1RMzg6Gd/vcyu7evQayim1E4UmkK2n6ixZElY+g==",
   "success": true,
-  "projectFilePath": "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj",
+  "projectFilePath": "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\damia\\.nuget\\packages\\csvhelper\\15.0.0\\csvhelper.15.0.0.nupkg.sha512",
     "C:\\Users\\damia\\.nuget\\packages\\epplus\\5.0.1-beta\\epplus.5.0.1-beta.nupkg.sha512",

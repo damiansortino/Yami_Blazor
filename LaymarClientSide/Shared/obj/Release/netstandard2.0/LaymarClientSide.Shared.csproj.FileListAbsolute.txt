@@ -71,3 +71,13 @@ D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\Layma
 D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
 D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
 D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.deps.json
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.pdb
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.AssemblyReference.cache
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfoInputs.cache
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.AssemblyInfo.cs
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.csproj.CoreCompileInputs.cache
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.dll
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\obj\Release\netstandard2.0\LaymarClientSide.Shared.pdb

@@ -66,3 +66,7 @@ function focusCodeBarString() {
     cadena.focus();
 
 }
+
+$(document).ready(function () {
+    $('#loader').fadeOut('slow');
+});

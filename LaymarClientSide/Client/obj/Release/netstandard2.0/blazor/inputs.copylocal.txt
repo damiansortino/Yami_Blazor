@@ -58,4 +58,4 @@ C:\Users\damia\.nuget\packages\system.xml.readerwriter\4.3.0\lib\netstandard1.3\
 C:\Users\damia\.nuget\packages\system.xml.xmldocument\4.3.0\lib\netstandard1.3\System.Xml.XmlDocument.dll
 C:\Users\damia\.nuget\packages\system.xml.xpath\4.3.0\lib\netstandard1.3\System.Xml.XPath.dll
 C:\Users\damia\.nuget\packages\system.xml.xpath.xmldocument\4.3.0\lib\netstandard1.3\System.Xml.XPath.XmlDocument.dll
-D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll
+D:\GIT\Yami_Blazor\LaymarClientSide\Shared\bin\Release\netstandard2.0\LaymarClientSide.Shared.dll

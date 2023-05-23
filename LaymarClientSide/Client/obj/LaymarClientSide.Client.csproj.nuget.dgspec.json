@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj": {}
+    "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj": {
+    "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj",
+        "projectUniqueName": "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj",
         "projectName": "LaymarClientSide.Client",
-        "projectPath": "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj",
+        "projectPath": "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Client\\LaymarClientSide.Client.csproj",
         "packagesPath": "C:\\Users\\damia\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Client\\obj\\",
+        "outputPath": "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,8 +32,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj": {
-                "projectPath": "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj"
+              "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj": {
+                "projectPath": "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj"
               }
             }
           }
@@ -104,14 +104,14 @@
         }
       }
     },
-    "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj": {
+    "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj",
+        "projectUniqueName": "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj",
         "projectName": "LaymarClientSide.Shared",
-        "projectPath": "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj",
+        "projectPath": "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Shared\\LaymarClientSide.Shared.csproj",
         "packagesPath": "C:\\Users\\damia\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\AlmaLibre_Blazor\\LaymarClientSide\\Shared\\obj\\",
+        "outputPath": "D:\\GIT\\Yami_Blazor\\LaymarClientSide\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

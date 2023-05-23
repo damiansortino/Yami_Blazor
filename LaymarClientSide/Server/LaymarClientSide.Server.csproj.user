@@ -11,6 +11,6 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>LaymarClientSide.Server.Context.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
-    <NameOfLastUsedPublishProfile>D:\GIT\AlmaLibre_Blazor\LaymarClientSide\Server\Properties\PublishProfiles\FolderProfile14.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\GIT\Yami_Blazor\LaymarClientSide\Server\Properties\PublishProfiles\FolderProfile15.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
